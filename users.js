@@ -51,7 +51,7 @@ const newUsers = [];
 const today = new Date();
 const handleUsersData = () => {
   users.forEach(user => {
-    const dateParser = user.lastly.slice(6).split("/");
+    const dateParser = user.lastly.slice(6).split(".");
     const dateOfPost = new Date(
       `${dateParser[2]}-${dateParser[1]}-${dateParser[0]}`
     );

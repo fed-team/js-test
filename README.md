@@ -7,4 +7,4 @@ Metodę, która rozwiązuje nam zadanie należy umieścić w repozytorium w plik
 W wynikowej tablicy interesuje mnie: 
 - tylko i wyłącznie pierwszy wpis użytkownika
 - id zmniejszone o 1
-- dodana nowa właściwość o nazwie "online", z wartością true lub false. True ma się pojawić w przypadku, gdy wpis użytkownika został dodany w przeciągu 30 dni od dnia obecnego.
+- dodana nowa właściwość o nazwie "online", z wartością true lub false. True ma się pojawić w przypadku, gdy wpis użytkownika został dodany w przeciągu 30 dni od dnia obecnego. Z dokładnością do dnia, nie godziny.

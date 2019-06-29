@@ -8,3 +8,13 @@ W wynikowej tablicy interesuje mnie:
 - tylko i wyłącznie pierwszy wpis użytkownika
 - id zmniejszone o 1
 - dodana nowa właściwość o nazwie "online", z wartością true lub false. True ma się pojawić w przypadku, gdy wpis użytkownika został dodany w przeciągu 30 dni od dnia obecnego. Z dokładnością do dnia, nie godziny.
+
+# Druga część zadania:
+
+Klient sobie zażyczył, żeby backendowcy zmienili datę w polu lately na
+- today at 23:00
+- yesterday at 10:05
+
+w przypadku gdy wpis nastąpi w dzień pobrania danych z API lub w przeddzień.
+
+Czy mógłbyś zmodyfikować kod, aby spełniał te warunki?

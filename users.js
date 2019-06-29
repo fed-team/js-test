@@ -46,3 +46,36 @@ const users = [
 	{ "id":45,"name":"Mays Noel","lastly":"00:00 18.04.2017"},
 	{ "id":46,"name":"Solomon Vang","lastly":"10:13 30.11.2017"}
 ];
+
+
+const newUserArr = [];
+const today = new Date();
+function handleUsersData() {
+  users.forEach(user => {
+    const dateParser = user.lastly
+      .slice(6)
+      .replace(/\./gi, "/")
+      .split("/");
+    const dateOfPost = new Date(
+      `${dateParser[2]}-${dateParser[1]}-${dateParser[0]}`
+    );
+
+    const timeFromPost = Math.floor(
+      ((dateOfPost - today) * -1) / 1000 / 60 / 60 / 24
+    );
+
+    const name = user.name;
+    const index = newUserArr.findIndex(user => user.name === name);
+    if (index === -1) {
+      user.id -= 1;
+      if (timeFromPost > 30) {
+        user.online = false;
+      } else {
+        user.online = true;
+      }
+      newUserArr.push(user);
+    }
+  });
+}
+
+handleUsersData();

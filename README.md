@@ -2,7 +2,7 @@ Pamiętajcie, że frontend to nie tylko szablony stron www, czy proste formularz
 
 Zadanie polega na przeformatowaniu listy za pomocą funkcji w taki sposób, aby otrzymać niezduplikowanych użytkowników. 
 
-Plik z metodą, która rozwiązuje nam zadanie należy zapisać w repozytorium (output.js). Nazwa metody dowolna, lecz koniecznie w języku angielskim.
+Metodę, która rozwiązuje nam zadanie należy umieścić w repozytorium w pliku users.js. Nazwa metody dowolna, lecz koniecznie w języku angielskim.
 
 W wynikowej tablicy interesuje mnie: 
 - tylko i wyłącznie pierwszy wpis użytkownika

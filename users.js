@@ -66,9 +66,9 @@ const handleUsersData = () => {
       user.id -= 1;
       user.online = timeFromPost <= 30;
       if (timeFromPost < 1) {
-        user.lastly = `today at ${user.lastly}`;
+        user.lastly = `today at ${user.lastly.slice(0, 5)}`;
       } else if (timeFromPost < 2) {
-        user.lastly = `yesterday at ${user.lastly}`;
+        user.lastly = `yesterday at ${user.lastly.slice(0, 5)}`;
       } else {
         user.lastly;
       }

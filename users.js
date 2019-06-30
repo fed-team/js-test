@@ -65,9 +65,15 @@ const handleUsersData = () => {
     if (index === -1) {
       user.id -= 1;
       user.online = timeFromPost <= 30;
+      if (today.getDate() === dateOfPost.getDate()) {
+        user.lastly = `today at ${user.lastly}`;
+      } else {
+        user.lastly = `yesterday at ${user.lastly}`;
+      }
       newUsers.push(user);
     }
   });
+  console.log(newUsers);
 };
 
 handleUsersData();

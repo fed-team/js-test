@@ -44,7 +44,10 @@ const users = [
   { id: 43, name: "Lana Clay", lastly: "01:00 01.01.1970" },
   { id: 44, name: "Helga Glenn", lastly: "01:00 01.01.1970" },
   { id: 45, name: "Mays Noel", lastly: "00:00 18.04.2017" },
-  { id: 46, name: "Solomon Vang", lastly: "10:13 30.11.2017" }
+  { id: 46, name: "Solomon Vang", lastly: "10:13 30.11.2017" },
+  { id: 47, name: "Solomonnn Vang", lastly: "21:13 30.06.2019" },
+  { id: 48, name: "Solomonnnnn Vang", lastly: "21:13 29.06.2019" },
+  { id: 49, name: "Solomonnnnn3 Vang", lastly: "21:13 28.06.2019" }
 ];
 
 const newUsers = [];
@@ -67,8 +70,10 @@ const handleUsersData = () => {
       user.online = timeFromPost <= 30;
       if (today.getDate() === dateOfPost.getDate()) {
         user.lastly = `today at ${user.lastly}`;
-      } else {
+      } else if (today.getDate() - dateOfPost.getDate() === 1) {
         user.lastly = `yesterday at ${user.lastly}`;
+      } else {
+        user.lastly;
       }
       newUsers.push(user);
     }

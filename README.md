@@ -18,3 +18,4 @@ Klient sobie zażyczył, żeby backendowcy zmienili datę w polu lately na
 w przypadku gdy wpis nastąpi w dzień pobrania danych z API lub w przeddzień.
 
 Czy mógłbyś zmodyfikować kod, aby spełniał te warunki?
+Należy dodać wyłącznie obsługę takiego zachowania, nie implementować backendu.

@@ -55,27 +55,18 @@ const handleUsersData = () => {
     const dateOfPost = new Date(
       `${dateParser[2]}-${dateParser[1]}-${dateParser[0]}`
     );
-
-    const timeFromPost = Math.floor(
-      ((dateOfPost - today) * -1) / 1000 / 60 / 60 / 24
-    );
-
+    const timeFromPost =
+      user.lastly.includes("today at") || user.lastly.includes("yesterday at")
+        ? 1
+        : Math.floor(((dateOfPost - today) * -1) / 1000 / 60 / 60 / 24);
     const name = user.name;
     const index = newUsers.findIndex(user => user.name === name);
     if (index === -1) {
       user.id -= 1;
       user.online = timeFromPost <= 30;
-      if (timeFromPost < 1) {
-        user.lastly = `today at ${user.lastly.slice(0, 5)}`;
-      } else if (timeFromPost < 2) {
-        user.lastly = `yesterday at ${user.lastly.slice(0, 5)}`;
-      } else {
-        user.lastly;
-      }
       newUsers.push(user);
     }
   });
-  console.log(newUsers);
 };
 
 handleUsersData();

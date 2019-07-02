@@ -56,7 +56,7 @@ const handleUsersData = () => {
       `${dateParser[2]}-${dateParser[1]}-${dateParser[0]}`
     );
     const timeFromPost =
-      user.lastly.includes("today at") || user.lastly.includes("yesterday at")
+      /today at+/i.test(user.lastly) || /yesterday at+/i.test(user.lastly)
         ? 1
         : Math.floor(((dateOfPost - today) * -1) / 1000 / 60 / 60 / 24);
     const name = user.name;

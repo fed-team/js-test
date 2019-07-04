@@ -46,3 +46,10 @@ const users = [
 	{ "id":45,"name":"Mays Noel","lastly":"00:00 18.04.2017"},
 	{ "id":46,"name":"Solomon Vang","lastly":"10:13 30.11.2017"}
 ];
+
+const showUsersInConsole = users => {
+	/* Your code should be here */
+	console.log(users);
+}
+
+showUsersInConsole(users);

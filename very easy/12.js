@@ -2,7 +2,7 @@ function isEmpty(s) {
 	
 }
 
-test(false, isEmpty(""))
+test(true, isEmpty(""))
 test(false, isEmpty(" "))
 test(false, isEmpty("            "))
 test(false, isEmpty("38215"))

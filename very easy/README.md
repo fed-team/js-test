@@ -1,3 +1,12 @@
+1. W plikach znajdują się puste funkcje, które należy uzupełnić nowym ciałem.
+2. Dodatkowo każdy plik posiada testy, które wypisują się w konsoli w przypadku błędnych rezultatów.
+3. Odpowiedzi proszę wysyłać w postaci pull requestów jak każde inne zadanie do tej pory.
+4. Dla własnego dobra, nie przeglądajcie pull requestów innych użytkowników
+5. W przypadku problemów możecie zapytać na discordzie lub messengerze, ale głęboka prośba, nie wysyłajcie innym użytkownikom pełnych odpowiedzi jak dane zadanie wykonać.
+PS. W większości zadań wystarczy dopisanie jednej linijki kodu :)
+
+> Treści zadań
+
 1. Stwórz funkcję, która zwróci tekst
 2. Stwórz funkcję, która przyjmie dwa argumenty i zwróci ich sumę
 3. Napisz funkcję, która przyjmuje wartość podstawy i wysokość trójkąta oraz zwróci jego pole

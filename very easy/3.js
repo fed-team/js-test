@@ -1,5 +1,5 @@
 function triArea(base, height) {
-	
+	return (base * height) / 2;
 }
 
 test(3, triArea(3, 2))

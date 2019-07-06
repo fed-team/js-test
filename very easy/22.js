@@ -1,5 +1,6 @@
 function volumeOfBox(sizes) {
-	
+    const { width, height, length } = sizes;
+	return  width * height * length;
 }
 
 test(22, volumeOfBox({width: 11,length: 1, height: 2}))

@@ -1,5 +1,5 @@
 function addition(num) {
-	
+	return ++num;
 }
 
 test(3, addition(2))

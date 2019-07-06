@@ -1,5 +1,5 @@
 function equalSlices(total, people, each) {
-	
+	return total / (people * each) >= 1 ? true : false;
 }
 
 test(true, equalSlices(8, 3, 2))

@@ -1,5 +1,5 @@
 function comp(str1, str2) {
-	
+	return str1.length === str2.length ? true : false;
 }
 
 test(true, comp("AB", "CD"))

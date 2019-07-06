@@ -1,6 +1,6 @@
 function helloName(name){
-
-} 
+    return `Hello ${name}!`;
+}
 
 test(`Hello Gerald!`, helloName("Gerald"))
 test(`Hello Fatima!`, helloName("Fatima"))

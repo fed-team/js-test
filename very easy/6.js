@@ -1,5 +1,5 @@
 function remainder(x, y) {
-	
+	return x % y;
 }
 
 test(1, remainder(7, 2));

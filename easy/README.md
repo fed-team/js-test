@@ -1,7 +1,7 @@
 1. Napisz funkcję sprawdzającą, czy trzeci argument znajduje się w słowniku pomiędzy dwoma pierwszymi
 2. Napisz funkcję, która przyjmuje w argumencie imię i numer (0 lub 1) i zwróci `Hello name` jeśli argument numer będzie równy 1 lub zwróci `Bye name` jeśli numer będzie równy 0
 3. Napisz funkcję, która zwróci najmniejszy i największy element tablicy
-4. Napisz funkcję, która obliczy ile zapałek potrzeba, aby zbudować domek z obrazka images/matchstick_houses.png
+4. Napisz funkcję, która obliczy ile zapałek potrzeba, aby zbudować domek z obrazka ![pic1](https://raw.githubusercontent.com/fed-team/js-test/master/easy/images/matchstick_houses.png)
 5. Napisz funkcję, która usunie z tablicy nulle
 6. Napisz funkcję, która wypisze Ci wszystkie liczby od 1 do n. Dodatkowo, co 4 pozycje, liczba ma być przemnożona przez 10
 7. Napisz funkcję, która rozpoznaje, z którym rodzajem kąta mamy do czynienia (obtuse - ostry, acute - rozwarty, right - prosty)

@@ -46,10 +46,97 @@ const users = [
 	{ "id":45,"name":"Mays Noel","lastly":"00:00 18.04.2017"},
 	{ "id":46,"name":"Solomon Vang","lastly":"10:13 30.11.2017"}
 ];
+/* { "id":2,"name":"Reilly Beach","lastly":"19:23 23.04.2019"}, */
+
+var usersCopy=[
+	{"id":0, "name":"A","lastly":"00:00 01.01.0001"},
+	{"id":1, "name":"Z","lastly":"00:01 01.01.0001"}
+];
+
+function copyBase(){
+
+	for(let i=0; i<users.length; i++){
+		console.log("59 | ", i, users[i]);
+		for(let j=0; j<usersCopy.length; j++){
+			console.log(i, j);
+			console.log("62 | ", i, users[i], "|", j, usersCopy[j]);
+
+			if(users[i].name>=usersCopy[j].name){
+
+				if(users[i].name=usersCopy[j].name){
+
+					let u = users[i].lastly.substr(12,4) + users[i].lastly.substr(9,2) + users[i].lastly.substr(6,2) + users[i].lastly.substr(0,2) + users[i].lastly.substr(3,2);
+					let uC = usersCopy[j].lastly.substr(12,4) + usersCopy[j].lastly.substr(9,2) + usersCopy[j].lastly.substr(6,2) + usersCopy[j].lastly.substr(0,2) + usersCopy[j].lastly.substr(3,2);
+
+				// 	if(u > uC){ //check the date, if smaller, replace record (zrob porownanie dat. do wstawienia w funkcji czy cos)
+				// //		console.log("WSTAWILEM", users[i]);
+				// 		usersCopy[j] = users[i];
+				// //		console.log("WSTAWILEM", users[i]);
+				// 	}else{
+
+				// 	}
+				}else{
+					//do nothing it is > go to next record in usersCopy
+					
+				}
+			}else{
+				//is smaller, insert it before current usersCopy record
+				usersCopy.splice(j-1,1,users[i])
+			}
+
+		}
+
+	}
+}
+
+copyBase(users);
+
+//console.log(usersCopy);
 
 const showUsersInConsole = users => {
 	/* Your code should be here */
+
+	// const currentDate = new Date();
+	// let day;
+	// let month;
+	// let year;
+	/*funkcja leadingZero() zamiast warunków*/
+	// if(0<currentDate.getDate()<10){
+	// 	day = '0' + currentDate.getDate();
+	// }
+	// if(0<currentDate.getMonth()<10){
+	// 	month = '0' + currentDate.getMonth(); 
+	// }
+
+	// const dayMonthYear = day + '.' + month + '.'+currentDate.getFullYear();
+
+	// console.log(dayMonthYear);
+	// console.log(currentDate);
+
+	// for(let i=0; i<users.length; i++){
+
+	// 	// let zmienna = users[i];
+		
+	// 	// if(
+	// 	// 	i !== users.length-1 &&
+	// 	// 	users[i].name == users[i+1].name && 
+	// 	// 	users[i].lastly == users[i+1].lastly
+	// 	// ){
+
+	// 	// 	users.splice(i,1,"dupa"); //delete an object from arrow
+	// 	// }
+	// 	// users[i].id = i+1;
+
+	// 	// users[i].online = true;
+
+	// }
+
+	
 	console.log(users);
 }
 
 showUsersInConsole(users);
+
+
+
+//kopiuje tablice sortujac rekordy i jednoczesnie porownojac czy nie ma juz takiego rekordu w docelowej tablicy. sprawdzam rowniez ktory rekord byl dodany do bazy jako pierwszy. 

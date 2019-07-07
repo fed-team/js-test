@@ -1,5 +1,5 @@
 function hello() {
-    console.log("hello world")
+    return "hello world";
 }
 
 test(`hello world`, hello())

@@ -1,5 +1,10 @@
 function profitableGamble(prob, prize, pay) {
-	
+    
+    if(prob * prize > pay){
+        return true;
+    }else{
+        return false;
+    }
 }
 
 test(true, profitableGamble(0.2, 50, 9));

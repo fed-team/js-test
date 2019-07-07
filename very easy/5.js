@@ -1,5 +1,9 @@
 function addition(num) {
-	
+	if(typeof num == "number"){
+        return (num+1);
+    }else{
+        return "to nie jest liczba";
+    }
 }
 
 test(3, addition(2))

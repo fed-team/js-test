@@ -4,7 +4,7 @@ function divisible(num) {
         return true;
     }else{
         return false;
-    }
+    }   
 
 }
 

@@ -1,4 +1,5 @@
 function concatName(firstName, lastName) {
+    return firstName + ", " + lastName;
 	
 }
 

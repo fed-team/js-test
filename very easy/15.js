@@ -1,5 +1,5 @@
 function helloName(name){
-
+    return "Hello " + name;
 } 
 
 test(`Hello Gerald!`, helloName("Gerald"))

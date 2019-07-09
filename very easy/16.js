@@ -1,8 +1,10 @@
 function reverse(arr) {
-    let x = arr.length;
-    for(let i = x; i>=0; i--){
-        return arr[i];
+    let arr2=[];
+    for(i = arr.length; i>=0; i--){
+        arr2.push(arr[i]);
     }
+    arr2.splice(0, 1);
+    return arr2;
 }
 //reverse([1, 2, 3, 4]);
 

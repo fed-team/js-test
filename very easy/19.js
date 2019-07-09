@@ -1,5 +1,9 @@
 function sum(n) {
-	
+    let one = 1;
+    for(i=n; i>=0; i--){
+        one=n+one;
+    }
+    return one;
 }
 
 test(1, sum(1))

@@ -1,5 +1,10 @@
 function check(arr, el) {
-	
+	for(i=0;i<=arr.length-1; i++){
+        if(arr[i]==el){
+            return true;
+        }
+    }
+    return false;
 }
 
 test(true, check([1, 2, 3, 4, 5], 3))

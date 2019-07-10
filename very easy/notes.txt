@@ -1,4 +1,0 @@
-dodaj w pliku 3.js sprawdzanie czy taki trojkat istnieje
-zrobione od 1 do 10, sprawdzic i cisnac dalej
-
-zadanie 12 zostalo pominiete, zrob

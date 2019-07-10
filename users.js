@@ -81,7 +81,7 @@ function copyBase(){
 				}
 			}else{
 				//is smaller, insert it before current usersCopy record
-				usersCopy.splice(j-1,1,users[i])
+				usersCopy.splice(j-1,0,users[i])
 			}
 
 		}

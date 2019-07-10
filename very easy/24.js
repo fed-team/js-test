@@ -1,4 +1,12 @@
 function isPlural(word) {
+
+    howLong = word.length-1;
+    
+    if(word.charAt(howLong)=="s") { 
+        return true;
+    }else{
+        return false;
+    }
 	
 }
 

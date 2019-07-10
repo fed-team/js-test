@@ -1,0 +1,1 @@
+teoretyczni wypadałoby też sprawdzić czy każda funkcja dostaje taki typ danych jakiego się spodziewa. jeżeli nie, to zwrócić odpowiedni komunikat.

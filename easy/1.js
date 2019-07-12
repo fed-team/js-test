@@ -3,7 +3,7 @@ function isBetween(first, last, word) {
     let arr = [first, last, word];
     arr.sort();
     //console.log(arr);
-    return (arr[1]==word) ? true : false;
+    return arr[1]==word;
 
 }
 

@@ -1,13 +1,5 @@
 function isPlural(word) {
-
-    howLong = word.length-1;
-    
-    if(word.charAt(howLong)=="s") { 
-        return true;
-    }else{
-        return false;
-    }
-	
+	return word.charAt(word.length-1)=="s";
 }
 
 test(true, isPlural("dudes"))

@@ -1,10 +1,5 @@
 function lessThanOrEqualToZero(num) {
-    if(num<=0){
-        return true;
-    }else{
-        return false;
-    }
-	
+	return (num<=0) ? true : false;
 }
 
 test(false, lessThanOrEqualToZero(5));

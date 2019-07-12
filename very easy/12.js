@@ -1,9 +1,5 @@
 function isEmpty(s) {
-	if(s == ""){
-        return true;
-    }else{
-        return false;
-    }
+    return s.length == 0;
 }
 
 test(true, isEmpty(""))

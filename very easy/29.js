@@ -1,9 +1,5 @@
 function calculateExponent(num, exp) {
-    let helper = 1;
-	for(i=0; i<exp; i++){
-        helper *= num;
-    }
-    return helper;
+    return num**exp;
 }
 
 test(3125, calculateExponent(5,5))

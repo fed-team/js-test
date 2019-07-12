@@ -1,12 +1,6 @@
 function reverse(arr) {
-    let arr2=[];
-    for(i = arr.length; i>=0; i--){
-        arr2.push(arr[i]);
-    }
-    arr2.splice(0, 1);
-    return arr2;
+    return arr.reverse();
 }
-//reverse([1, 2, 3, 4]);
 
 testSimilar([4, 3, 2, 1], reverse([1, 2, 3, 4]))
 testSimilar([7, 6, 5], reverse([5, 6, 7]))

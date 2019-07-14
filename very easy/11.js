@@ -1,5 +1,5 @@
 function divisible(num) {
-
+ return num % 100 == 0;
 }
 
 test(false, divisible(1))

@@ -1,5 +1,5 @@
 function profitableGamble(prob, prize, pay) {
-	
+    return prob * prize > pay;
 }
 
 test(true, profitableGamble(0.2, 50, 9));

@@ -1,5 +1,5 @@
 function match(s1, s2) {
-	
+	return s1.toLowerCase() == s2.toLowerCase();
 }
 
 test(true, match("hello", "hELLo"))

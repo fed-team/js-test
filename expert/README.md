@@ -1,9 +1,11 @@
 #
 1. Create a function that takes a string (without spaces), cleaves the string into words based on the declared array, and returns the correctly spaced version of the string (a sentence). If a section of the string is encountered that can't be found on the word array, return "Cleaving stalled: Word not found".
+
 NOTES:
 - Words in the words array can appear more than once in the string. The words array is a reference guide, kind of like a dictionary that lists which words are allowed.
 #
 2. Write a function that select all words that shares the same vowels (in any ordering) as the first word in the array.
+
 NOTES:
 - Words will contain only lowercase letters, and may contain whitespaces.
 - Frequency does not matter (e.g. if "loopy", then you can include words with any number of o's, so long as they only contain o's, and not any other vowels).
@@ -11,6 +13,7 @@ NOTES:
 3. A number may not be a palindrome, but it's descendant can be. A number's direct child is created by summing each pair of adjacent digits to create the digits of the next number.
 For instance, `123312` is not a palindrome, but it's next child `363` is, where: `3 = 1 + 2; 6 = 3 + 3; 3 = 1 + 2`.
 Create a function that returns true if the number itself is a palindrome or any of its descendants down to 2 digits (a 1-digit number is trivially a palindrome).
+
 NOTES:
 - Numbers will always have an even number of digits.
 #
@@ -20,6 +23,7 @@ Throwing a certain amount of valid darts, find how many solutions there are to r
 - Darts: The amount of darts to throw.
 - Target: The target score.
 Return an empty array if no solution is found, otherwise an array of non-duplicate strings for each solution (e.g. `["3-11-18", "7-7-18", "7-11-14"]`).
+
 NOTES:
 - Multiple darts can land in the same section.
 - A dart must land in a valid section (it can't miss).
@@ -43,6 +47,7 @@ Encipher the message using the basic Polybius cipher, but write the numbers in t
 |-|-|-|-|-|-|-|-|-|-|-|-|-|
 |2|2|2|3|3|1|1|3|4|2|1|4|1|
 |4|5|4|1|1|5|4|2|5|1|1|3|1|
+
 Read off the numbers horizontally, in pairs:
 `22 23 31 13 42 14 14 54 11 54 25 11 31`
 Generate the ciphertext by converting these new pairs of numbers into new letters using the Polybius square.
@@ -64,6 +69,7 @@ isWordChain(["meek", "meet", "meat", "teal"]) ➞ false
 isWordChain(["run", "runny", "bunny"]) ➞ false
 // "run" => "runny" adds 2 letters (can only add 1).
 ```
+
 NOTES:
 - You can only do one (not both) for each word change.
 - All words will be in lower-case.
@@ -129,6 +135,7 @@ classifyRug([
   ["b", "b"]
 ]) ➞ "vertically symmetric"
 ```
+
 NOTES:
 - You can consider a `1 x n` rug as being trivially horizontally symmetric, an `n x 1` rug as being trivially vertically symmetric, and a `1 x 1` rug as being trivially perfect.
 #
@@ -158,6 +165,7 @@ Our function should yield `4` for the map below: :
   [0, 0, 1]
 ]
 ```
+
 NOTES:
 - Maps can be any `m x n` dimension.
 - Maps will always have at least 1 element. `m >= 1` and `n >= 1`.
@@ -177,6 +185,7 @@ join(["to", "ops", "psy", "syllable"]) ➞ ["topsyllable", 1]
 
 join(["aaa", "bbb", "ccc", "ddd"]) ➞ ["aaabbbcccddd", 0]
 ```
+
 NOTES:
 - More specifically, look at the overlap between the previous words ending letters and the next word's beginning letters.
 #

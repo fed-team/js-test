@@ -15,6 +15,7 @@ function divisibleByFive(n) {
 
         console.log(n);
     }
+    return false
 }
 
 test(false, divisibleByFive(7))

@@ -1,10 +1,14 @@
 function amplify(num) {
+<<<<<<< HEAD
     let arr = [];
 	for(i=1; i<=num; i++){
         (i%4!==0) ? arr[arr.length] = i : arr[arr.length] = i*10;
     }
     //console.log(arr);
     return arr;
+=======
+	
+>>>>>>> 8c0b4c51e337aae063d1a5e0ad57107227c19f45
 }
 
 testSimilar(amplify(1), [1]);

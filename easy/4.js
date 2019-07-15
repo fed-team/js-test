@@ -1,4 +1,5 @@
 function matchHouses(step) {
+<<<<<<< HEAD
     
     if(step==0){
         return 0;
@@ -8,6 +9,9 @@ function matchHouses(step) {
     //console.log(returnValue);
 
     return returnValue;
+=======
+	
+>>>>>>> 8c0b4c51e337aae063d1a5e0ad57107227c19f45
 }
 
 test(matchHouses(1), 6)

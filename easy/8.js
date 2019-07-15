@@ -1,4 +1,5 @@
 function societyName(friends) {
+<<<<<<< HEAD
     friends.sort();
     let name = "";
     
@@ -6,6 +7,9 @@ function societyName(friends) {
         name = `${name}${friends[i].charAt(0)}`;
     }
     return name.toUpperCase();
+=======
+	
+>>>>>>> 8c0b4c51e337aae063d1a5e0ad57107227c19f45
 }
 
 test(societyName(['Adam', 'Sarah', 'Malcolm']), 'AMS')

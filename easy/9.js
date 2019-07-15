@@ -1,6 +1,12 @@
 
 function hashPlusCount(str) {
-	
+    let plus = 0;
+    let hash = 0;
+    for(i=0; i<str.length;i++){
+        if(str[i]==`+`) plus++;
+        else if(str[i]==`#`)hash++;
+    }
+    return[hash, plus];
 }
 
 testSimilar(hashPlusCount("####"), [4, 0])
@@ -12,4 +18,3 @@ testSimilar(hashPlusCount("###+"), [3, 1])
 testSimilar(hashPlusCount("##+++#"), [3, 3])
 testSimilar(hashPlusCount("#+++#+#++#"), [4, 6])
 testSimilar(hashPlusCount(""), [0, 0])
->>>>>>> 8c0b4c51e337aae063d1a5e0ad57107227c19f45

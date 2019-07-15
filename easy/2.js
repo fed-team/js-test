@@ -1,12 +1,9 @@
 function sayHelloBye (name, num) {
-<<<<<<< HEAD
     name = name.charAt(0).toUpperCase() + name.slice(1);
     //console.log(name);
 
     return (num ==1) ? `Hello ${name}` : `Bye ${name}`;
-=======
 	
->>>>>>> 8c0b4c51e337aae063d1a5e0ad57107227c19f45
 }
 
 test(sayHelloBye('jose', 1), "Hello Jose")

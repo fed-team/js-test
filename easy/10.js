@@ -1,22 +1,13 @@
-<<<<<<< HEAD
-function divisibleByFive(n) {
+function largestSwap(n) {
     let org = n;
     n = n.toString();
-    
-    if(n.length==2){
-        n = n.split(``);
-        n = n.reverse();
-        n = n.toString();
-        n = parseInt(n);
+    n = n.split(``);
+    n = n.reverse();
+    n = n.toString();
+    n = n.replace(`,`, ``);
+    n = parseInt(n);
+    return (org >= n);
 
-        return (org>n); 
-    }else if(n.length==3 && n[0]==`-`){
-        n = n.split(``);
-
-
-        console.log(n);
-    }
-    return false
 }
 
 test(largestSwap(27), false)

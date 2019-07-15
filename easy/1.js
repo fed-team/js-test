@@ -1,5 +1,7 @@
 function isBetween(first, last, word) {
-	
+    let arr = [first, last, word];
+    arr.sort();
+    return (arr[1]==word);
 }
 
 test(isBetween("apple", "banana", "azure"), true)

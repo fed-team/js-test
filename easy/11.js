@@ -1,5 +1,11 @@
 function set(arr) {
-	
+	for(i=0; i<arr.length; i++){
+        for(j=0; j<arr.length;j++){
+            if(arr[i]==arr[j]){
+                
+            }
+        }
+    }
 }
 
 testSimilar(set([1, 3, 3, 5, 5]), [1, 3, 5])

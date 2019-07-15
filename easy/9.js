@@ -1,9 +1,13 @@
-function largestSwap(num) {
+function hashPlusCount(str) {
 	
 }
 
-test(largestSwap(27), false)
-test(largestSwap(43), true)
-test(largestSwap(14), false)
-test(largestSwap(53), true)
-test(largestSwap(99), true)
+testSimilar(hashPlusCount("####"), [4, 0])
+testSimilar(hashPlusCount("#"), [1, 0])
+testSimilar(hashPlusCount("+++++++"), [0, 7])
+testSimilar(hashPlusCount("++"), [0, 2])
+testSimilar(hashPlusCount("#+#+"), [2, 2])
+testSimilar(hashPlusCount("###+"), [3, 1])
+testSimilar(hashPlusCount("##+++#"), [3, 3])
+testSimilar(hashPlusCount("#+++#+#++#"), [4, 6])
+testSimilar(hashPlusCount(""), [0, 0])

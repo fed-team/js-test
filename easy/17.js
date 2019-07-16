@@ -12,7 +12,7 @@ function firstVowel(str) {
                 if (element == ele) {
                     score = str.indexOf(element);
                     console.log(score);
-                    return score;
+                    //return score;
                 }
             });
         }

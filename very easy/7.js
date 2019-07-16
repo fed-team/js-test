@@ -1,7 +1,6 @@
 function lessThanOrEqualToZero(num) {
-	
+  return num <= 0;
 }
-
 test(false, lessThanOrEqualToZero(5));
 test(true, lessThanOrEqualToZero(0));
 test(true, lessThanOrEqualToZero(-5));

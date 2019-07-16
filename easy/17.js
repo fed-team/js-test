@@ -6,13 +6,13 @@ function firstVowel(str) {
     // console.log(typeof lookfor);
     str.forEach(element => {
         if (score !== -1) {
-            return score;
+            //return score;
         } else {
             lookfor.forEach(ele => {
                 if (element == ele) {
                     score = str.indexOf(element);
                     console.log(score);
-                    //return score;
+                    return score;
                 }
             });
         }

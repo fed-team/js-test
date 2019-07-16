@@ -1,5 +1,14 @@
 function firstVowel(str) {
-	
+    str = str.toLowerCase();
+    str= str.split([``[1]]);
+    let lookfor = [`a`,`e`,`i`,`o`,`u`,`y`]
+
+    str.forEach(element, i => {
+        lookfor.forEach(ele => {
+            if(element==ele) return i;
+        });
+    });
+
 }
 
 test(firstVowel("hello"), 1)

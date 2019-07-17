@@ -4,7 +4,6 @@ function firstVowel(str) {
     let lookfor = [`a`, `e`, `i`, `o`, `u`, `y`]
     let score = -1;
     let count = 0;
-    // console.log(typeof lookfor);
     str.forEach(element => {
         lookfor.forEach(ele => {
             if (element == ele && count != 1) {

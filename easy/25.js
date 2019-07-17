@@ -1,5 +1,5 @@
-function isZipCode(zipcode){
-
+function isZipCode(zipcode){    
+    return (zipcode[2]==`-`)
 } 
 
 test(isZipCode("81-442"), true); 

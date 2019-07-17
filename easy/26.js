@@ -1,5 +1,15 @@
 function isSymmetrical(num) {
-	
+    let str = num.toString();
+    let count = 0;
+
+    let howLong = Math.ceil(str.length/2);
+    
+    for(i=0;i<howLong;i++){
+        if(str[i]==str[str.length-1-i]){
+            count++;
+        }   
+    }
+    return (count == Math.ceil(howLong));
 }
 
 test(isSymmetrical(23), false)

@@ -14,7 +14,7 @@ function minMax(arr) {
     }
     
 
-    let returnValueArr = [loser, winner];
+    const returnValueArr = [loser, winner];
     //console.log(returnValueArr);
     
     return returnValueArr;

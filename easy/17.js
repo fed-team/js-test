@@ -1,7 +1,7 @@
 function firstVowel(str) {
     str = str.toLowerCase();
     str = str.split([`` [1]]);
-    let lookfor = [`a`, `e`, `i`, `o`, `u`, `y`]
+    let lookfor = [`a`, `e`, `i`, `o`, `u`, `y`];
     let score = -1;
     let count = 0;
     str.forEach(element => {

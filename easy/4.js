@@ -1,13 +1,5 @@
 function matchHouses(step) {
-   
-    if(step==0){
-        return 0;
-    }
-
-    let returnValue = (step*5) + 1;
-    //console.log(returnValue);
-
-    return returnValue;
+   return (step==0) ? 0 : step*5+1;
 }
 
 test(matchHouses(1), 6)

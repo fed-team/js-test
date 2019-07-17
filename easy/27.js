@@ -1,5 +1,6 @@
 function myPi(n) {
-	
+    return Math.PI.toFixed(n);
+    //do obczajenia potem.
 }
 
 test(myPi(0), 3)

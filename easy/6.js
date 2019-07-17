@@ -3,7 +3,6 @@ function amplify(num) {
 	for(i=1; i<=num; i++){
         (i%4!==0) ? arr[arr.length] = i : arr[arr.length] = i*10;
     }
-    //console.log(arr);
     return arr;
 }
 

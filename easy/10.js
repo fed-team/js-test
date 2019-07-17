@@ -1,5 +1,5 @@
 function largestSwap(n) {
-    let org = n;
+    const org = n;
     n = n.toString();
     n = n.split(``);
     n = n.reverse();

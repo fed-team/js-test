@@ -1,5 +1,9 @@
 function sumOfCubes(nums) {
-	
+    let score=0;
+    nums.forEach(element => {
+        score=score+element**3;
+    });
+    return score;
 }
 
 test(sumOfCubes([1, 5, 9]), 855)

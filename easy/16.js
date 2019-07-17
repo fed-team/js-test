@@ -1,6 +1,6 @@
 function charIndex(word, char) {
 
-    word= word.split([``[1]]);
+    word= word.split([``[1]]); //zamiana stringa w tablice
 
     let helper = [];
     word.forEach((element, i)=> {

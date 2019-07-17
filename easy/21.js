@@ -1,5 +1,28 @@
 function chatroomStatus(users) {
-	
+    // if(users.length==0){return `no one online`;}
+    // else if(users.length==1){return `${users[0]} online`}
+    // else if(users.length==2){return `${users[0]} and ${users[1]} online`}
+    // else if(users.length>=3){
+    //     let num = users.length-2;
+    //     return `${users[0]}, ${users[1]} and ${num} more online`
+    // }
+
+    switch(users.length){
+        case 0:
+            return `no one online`;
+        break;
+        case 1:
+                return `${users[0]} online`;
+        break;
+        case 2: 
+            return `${users[0]} and ${users[1]} online`;
+        break;
+        default:
+                let num = users.length-2;
+                return `${users[0]}, ${users[1]} and ${num} more online`
+    }
+
+//chyba takie rzeczy sie powinno robic na switchu jest bardziej czytelne i mniej kodu
 }
 
 testSimilar(chatroomStatus([]), "no one online")

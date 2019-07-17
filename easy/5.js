@@ -1,5 +1,5 @@
 function removeNull(arr) {
-    return arr.filter(function(el){
+    return arr.filter((el)=>{
         return el !== null;
     })
 }

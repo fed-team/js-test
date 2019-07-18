@@ -1,12 +1,8 @@
 function convertToDecimal(perc) {
-    
     const arr = perc.map((n) => {
-
-        return parseFloat(n)/100;
-
+        return parseFloat(n) / 100;
     });
-
-	return arr;
+    return arr;
 }
 
 testSimilar(convertToDecimal(["33%", "98.1%", "56.44%", "100%"]), [0.33, 0.981, 0.5644, 1])

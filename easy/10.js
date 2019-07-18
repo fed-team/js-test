@@ -1,13 +1,7 @@
 function largestSwap(n) {
-    const org = n;
-    n = n.toString();
-    n = n.split(``);
-    n = n.reverse();
-    n = n.toString();
-    n = n.replace(`,`, ``);
-    n = parseInt(n);
-    return (org >= n);
-
+    let dozens = n%10;
+    let unity = Math.floor(n/10);
+    return (dozens*10+unity)<=n;
 }
 
 test(largestSwap(27), false)

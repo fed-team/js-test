@@ -13,6 +13,8 @@ function isSuffix(word, suffix) {
     return word == suffix;
 }
 
+//can it be done more simply?
+
 test(isPrefix('automation', 'auto-'), true)
 test(isPrefix('superfluous', 'super-'), true)
 test(isPrefix('oration', 'mega-'), false)

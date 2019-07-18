@@ -4,10 +4,8 @@ function convertBinary(str) {
         for(i=0;i<str.length; i++){
         if(str[i]<=`M`){
             result = `${result}0`;
-            // console.log(result, i);
         }else{
             result = `${result}1`;
-            // console.log(result, i);
         }
     }
     return result;

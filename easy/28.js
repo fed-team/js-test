@@ -1,13 +1,11 @@
 function isAvgWhole(arr) {
     let count = 0;
     let score = 0;
-    
     arr.forEach(element => {
         count +=element;
     });
     score = count/arr.length;
-    return (Math.floor(score) == score);
-
+    return Math.floor(score) == score;
 }
 
 test(isAvgWhole([3, 5, 9]), false);

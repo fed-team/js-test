@@ -1,6 +1,6 @@
 function set(arr) {
 
-    let filterArr = arr.filter(function(value, index) {                                                            true/ false
+    let filterArr = arr.filter((value, index) => {                                                            true/ false
         return arr.indexOf(value) == index;
       });
       return filterArr;

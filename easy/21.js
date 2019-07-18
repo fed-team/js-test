@@ -22,7 +22,7 @@ function chatroomStatus(users) {
                 return `${users[0]}, ${users[1]} and ${num} more online`
     }
 
-//chyba takie rzeczy sie powinno robic na switchu jest bardziej czytelne i mniej kodu
+//first i do it on normal if, then i think it should be do on switch. is it correct thinking?
 }
 
 testSimilar(chatroomStatus([]), "no one online")

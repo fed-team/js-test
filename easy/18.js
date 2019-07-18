@@ -14,6 +14,8 @@ function reverseCase(str) {
     return newStr;
 }
 
+//yes, i know, last else is not required, but like this imo is more readable
+
 test(reverseCase('Happy Birthday'), 'hAPPY bIRTHDAY')
 test(reverseCase('MANY THANKS'), 'many thanks')
 test(reverseCase('sPoNtAnEoUs'), 'SpOnTaNeOuS')

@@ -1,6 +1,6 @@
 function vreplace(vowel, char) {
     let lookfor = [`a`, `e`, `i`, `o`, `u`, `y`];
-    vowel= vowel.split([``[1]]);
+    vowel= vowel.split('');
     for(i=0; i<vowel.length; i++){
         for(j=0; j<lookfor.length; j++){
             if(vowel[i]==lookfor[j]){

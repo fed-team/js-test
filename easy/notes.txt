@@ -1,4 +1,4 @@
 22,23,24 do powrotu, nie tknięte
 
-27,29 do poprawy
-10 do poprawy, dziala ale trzeba uproscic
+3, 29 do poprawy
+//karaimu 26a/1

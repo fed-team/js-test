@@ -1,15 +1,12 @@
 function charIndex(word, char) {
-
-    word= word.split([``[1]]); //zamiana stringa w tablice
-
+    word = word.split('');
     let helper = [];
-    word.forEach((element, i)=> {
-        if(element == char){
+    word.forEach((element, i) => {
+        if (element == char) {
             helper.push(i);
         }
     });
-    //console.log(helper);
-    return (helper.length>0)?[helper[0], helper[helper.length-1]]:undefined;
+    return (helper.length > 0) ? [helper[0], helper[helper.length - 1]] : undefined;
 }
 
 testSimilar(charIndex('hello', 'l'), [2, 3])

@@ -1,6 +1,6 @@
 function myPi(n) {
-    return Math.PI.toFixed(n);
-    //do obczajenia potem.
+    let factor = 10**n;
+    return Math.round(Math.PI*factor)/factor;
 }
 
 test(myPi(0), 3)

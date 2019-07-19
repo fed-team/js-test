@@ -1,5 +1,15 @@
 const replaceVowels = (str, sign) => {
-
+    let lookfor = [`a`, `e`, `i`, `o`, `u`, `y`];
+    str= str.split('');
+    for(i=0; i<str.length; i++){
+        for(j=0; j<lookfor.length; j++){
+            if(str[i]==lookfor[j]){
+                str[i]=sign;
+            }
+        }
+    }
+    return str.join(``);
+    //this is the same as 30th qest from ../easy/folder
 }
 
 test(replaceVowels("the aardvark", "#"), "th# ##rdv#rk")

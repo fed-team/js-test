@@ -1,5 +1,10 @@
 function charCount(char, str) {
-	
+    const arr = str.split(``);
+    let count=0;
+    arr.forEach(el => {
+        if(el==char) count++
+    });
+    return count;
 }
 
 test(charCount('a', 'edabit'), 1)

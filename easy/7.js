@@ -1,5 +1,5 @@
 function missingAngle(angle1, angle2) {
-    if(angle1+angle2<90) return "obtuse";
+    if(angle1+angle2>90) return "obtuse";
     else if(angle1+angle2==90) return "right";
     else return "acute";
 }

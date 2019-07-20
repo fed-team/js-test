@@ -1,5 +1,11 @@
 function societyName(friends) {
-	
+    let firstLetters=[];
+    for(let i=0;i<friends.length;i++)
+    {
+        firstLetters[i]=friends[i][0];
+    }
+    firstLetters.sort();
+    return firstLetters.join("");
 }
 
 test(societyName(['Adam', 'Sarah', 'Malcolm']), 'AMS')

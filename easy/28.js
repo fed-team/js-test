@@ -1,5 +1,10 @@
 function isAvgWhole(arr) {
-	
+    let average=0;
+    for(let i=0; i<arr.length; i++){
+        average+=arr[i];
+    }
+    average/=arr.length;
+    return Number.isInteger(average);
 }
 
 test(isAvgWhole([3, 5, 9]), false);

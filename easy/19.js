@@ -1,5 +1,6 @@
 function timeForMilkAndCookies(date) {
-	
+    let dateString = date.toDateString();
+    return dateString.substring(4,10)=="Dec 24";
 }
 
 test(timeForMilkAndCookies(new Date(2013, 11, 24)), true)

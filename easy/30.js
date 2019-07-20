@@ -1,5 +1,5 @@
-function vreplace(vowel) {
-	
+function vreplace(str, vowel) {
+    return str.replace(/[aeiou]/g, vowel);
 }
 
 test(vreplace("apples and bananas", "u"), "upplus und bununus")

@@ -1,5 +1,9 @@
-function sayHelloBye (name, num) {
-	
+function sayHelloBye(name, num) {
+    if (num == 1) {
+        return `Hello ${name.charAt(0).toUpperCase()+name.slice(1)}`;
+    } else if (num == 0) {
+        return `Bye ${name.charAt(0).toUpperCase()+name.slice(1)}`;
+    }
 }
 
 test(sayHelloBye('jose', 1), "Hello Jose")

@@ -1,5 +1,14 @@
 function matchHouses(step) {
-	
+    if(step==1)
+    {
+        return 6;
+    }
+    else if(step>1){
+        return 6+(step-1)*5;
+    }
+    else{
+        return 0;
+    }
 }
 
 test(matchHouses(1), 6)

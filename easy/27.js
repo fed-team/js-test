@@ -1,5 +1,5 @@
 function myPi(n) {
-	
+	return parseFloat(Math.PI.toFixed(n));
 }
 
 test(myPi(0), 3)

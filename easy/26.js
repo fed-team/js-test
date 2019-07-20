@@ -1,5 +1,6 @@
 function isSymmetrical(num) {
-	
+    let numReversed=num.toString().split("").reverse().join("");
+    return numReversed==num.toString();
 }
 
 test(isSymmetrical(23), false)

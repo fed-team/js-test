@@ -1,9 +1,9 @@
 function isPrefix(word, prefix) {
-	
+    return word.includes(prefix.substring(0, prefix.length - 1));
 }
 
 function isSuffix(word, suffix) {
-	
+    return word.includes(suffix.substring(1, suffix.length));
 }
 
 test(isPrefix('automation', 'auto-'), true)

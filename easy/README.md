@@ -4,7 +4,7 @@
 4. Napisz funkcję, która obliczy ile zapałek potrzeba, aby zbudować domek z obrazka ![pic1](https://raw.githubusercontent.com/fed-team/js-test/master/easy/images/matchstick_houses.png)
 5. Napisz funkcję, która usunie z tablicy nulle
 6. Napisz funkcję, która wypisze Ci wszystkie liczby od 1 do n. Dodatkowo, co 4 pozycje, liczba ma być przemnożona przez 10
-7. Napisz funkcję, która rozpoznaje, z którym rodzajem kąta mamy do czynienia (obtuse - ostry, acute - rozwarty, right - prosty)
+7. Napisz funkcję, która rozpoznaje, z którym rodzajem kąta mamy do czynienia (obtuse - rozwarty, acute - ostry, right - prosty)
 8. Trójka przyjaciół zdecydowała się założyć tajne stowarzyszenie. Brakowało im nazwy. Postanowili, aby nazwa zawierała pierwsze litery ich imion posortowane alfabetycznie. Napisz funkcję, która zwróci nazwę stowarzyszenia
 9. Napisz funkcję, która zwraca ilość hashy i plusów w argumencie
 10. Napisz funkcję sprawdzającą czy dwucyfrowa liczba w argumencie po zmianie kolejności cyfr będzie mniejsza niż jej oryginał 

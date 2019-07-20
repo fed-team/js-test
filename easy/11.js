@@ -1,5 +1,7 @@
 function set(arr) {
-	
+    const uniqueArr = new Set(arr);
+    arr=[...uniqueArr];
+    return arr;
 }
 
 testSimilar(set([1, 3, 3, 5, 5]), [1, 3, 5])

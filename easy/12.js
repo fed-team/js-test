@@ -1,5 +1,8 @@
 function convertToDecimal(perc) {
-	
+    for (let i = 0; i < perc.length; i++) {
+        perc[i] = parseFloat(perc[i]) * 0.01;
+    };
+    return perc;
 }
 
 testSimilar(convertToDecimal(["33%", "98.1%", "56.44%", "100%"]), [0.33, 0.981, 0.5644, 1])

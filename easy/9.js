@@ -4,7 +4,7 @@ function hashPlusCount(str) {
     if (str[i] == "#") hash++;
     else if (str[i] == "+") plus++;
   }
-  return `${hash},${plus}`;
+  return [hash, plus];
 }
 
 testSimilar(hashPlusCount("####"), [4, 0]);

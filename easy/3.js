@@ -1,5 +1,5 @@
 function minMax(arr) {
-  return Math.min(...arr) + `,` + Math.max(...arr);
+  return [Math.min(...arr), Math.max(...arr)];
 }
 
 testSimilar(minMax([14, 35, 6, 1, 34, 54]), [1, 54]);

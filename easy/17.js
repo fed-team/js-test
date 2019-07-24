@@ -1,10 +1,5 @@
 function firstVowel(str) {
-  str.forEach((el, index) => {
-    // if (el == str.match(/[aeiou]/gi)) {
-    //   console.log(index);
-    // }
-    console.log(el);
-  });
+  return str.indexOf(str.match(/[aeiou]/gi)[0]);
 }
 
 test(firstVowel("hello"), 1);

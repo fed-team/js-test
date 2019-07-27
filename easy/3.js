@@ -1,6 +1,5 @@
 function minMax(arr) {
-    let arrMaxMin=[Math.min.apply(null, arr),Math.max.apply(null, arr)];
-    return arrMaxMin;
+    return [Math.min.apply(null, arr), Math.max.apply(null, arr)]
 }
 
 testSimilar(minMax([14, 35, 6, 1, 34, 54]), [1, 54])

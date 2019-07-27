@@ -1,5 +1,5 @@
 function find_index(arr, str) {
-    return arr.indexOf(str);
+    return arr.findIndex(string=>string==str);
 }
 
 test(3, find_index(['abc', 'ghj', 'banana', 'grape'], 'grape'))

@@ -1,8 +1,7 @@
 function isZipCode(zipcode) {
     let NumberOfCorrectLetters = 0;
-    const myRegExp = /[0-9]/;
     for (let number of zipcode) {
-        if (myRegExp.test(number)) NumberOfCorrectLetters++;
+        if (number.match(/[0-9]/)) NumberOfCorrectLetters++;
     }
     return (NumberOfCorrectLetters == 5) && (zipcode[2] == "-");
 }

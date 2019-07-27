@@ -1,6 +1,5 @@
 function convertBinary(str) {
-    const alphabet= `abcdefghijklmnopqrstuvwxyz`;
-    return str.toLowerCase().split("").map(char=>alphabet.substring(0,13).includes(char)?'0':'1').join("");
+    return str.toLowerCase().split("").map(char=>/[a-m]/.test(char)?'0':'1').join("");
 }
 
 test(convertBinary("house"), "01110")

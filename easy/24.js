@@ -1,11 +1,5 @@
 function filterArray(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (typeof (arr[i]) == "string") {
-            arr.splice(i, 1);
-            i--;
-        }
-    }
-    return arr;
+    return arr.filter(element => typeof (element) != "string");
 }
 
 testSimilar(filterArray([1, 2, "a", "b"]), [1, 2]);

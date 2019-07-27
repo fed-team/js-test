@@ -1,9 +1,5 @@
 function sumOfCubes(nums) {
-    let sum=0;
-    for(let number of nums){
-        sum+=number**3;
-    }
-    return sum;
+    return nums.reduce((sum, number) => sum + number ** 3, 0);
 }
 
 test(sumOfCubes([1, 5, 9]), 855)

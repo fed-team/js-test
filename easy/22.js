@@ -1,9 +1,5 @@
 function charCount(char, str) {
-    let charNumber = 0;
-    for (let letter of str){
-        letter==char?charNumber++:charNumber;
-    }
-    return charNumber;
+   return str.split("").filter(character=>character==char).length;
 }
 
 test(charCount('a', 'edabit'), 1)

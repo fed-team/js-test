@@ -1,9 +1,5 @@
 function factorial(n) {
-    let sum=1;
-	for(let i=1;i<=n;i++){
-        sum*=i;
-    }
-    return sum;
+    return n?n*factorial(n-1):1;
 }
 
 test(factorial(5), 120)

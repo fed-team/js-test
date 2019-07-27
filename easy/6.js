@@ -1,7 +1,7 @@
 function amplify(num) {
-    let numbersArr = Array.from({length: num}, (v, k) => k+1);
-
-    return numbersArr.map( numbersArr => numbersArr%4==0 ? numbersArr*10 : numbersArr);
+    return Array.from({
+        length: num
+    }, (v, k) => k + 1).map(numbersArr => numbersArr % 4 == 0 ? numbersArr * 10 : numbersArr);
 }
 
 testSimilar(amplify(1), [1]);

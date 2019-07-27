@@ -1,5 +1,5 @@
 function ctoa(c) {
-	return c.charCodeAt(0);
+	return c.charCodeAt();
 }
 
 test(32, ctoa(' '))

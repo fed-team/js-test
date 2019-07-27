@@ -1,9 +1,5 @@
 function sum(n) {
-    let sum=0;
-    for(let i = 0; i <= n; i++){
-        sum+= i;
-    }
-    return sum;
+    return n*(n+1)/2;
 }
 
 test(1, sum(1))

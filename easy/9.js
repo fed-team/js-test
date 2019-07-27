@@ -1,6 +1,5 @@
 function hashPlusCount(str) {
-    let hashPlus = [str.split("").filter(char => char == "#").length, str.split("").filter(char => char == "+").length];
-    return hashPlus;
+    return [str.split("").filter(char => char == "#").length, str.split("").filter(char => char == "+").length];
 
 }
 

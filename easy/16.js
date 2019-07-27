@@ -1,5 +1,7 @@
 function charIndex(word, char) {
-  return [word.indexOf(char), word.lastIndexOf(char)];
+  if (word.indexOf(char) + 1 || word.lastIndexOf(char) + 1) {
+    return [word.indexOf(char), word.lastIndexOf(char)];
+  }
 }
 
 testSimilar(charIndex("hello", "l"), [2, 3]);

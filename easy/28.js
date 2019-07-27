@@ -1,5 +1,9 @@
 function isAvgWhole(arr) {
-	
+  let sum = 0;
+  arr.forEach(num => {
+    sum += num;
+  });
+  return Number.isInteger(sum / arr.length);
 }
 
 test(isAvgWhole([3, 5, 9]), false);

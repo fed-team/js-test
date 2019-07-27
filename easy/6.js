@@ -1,16 +1,7 @@
 function amplify(num) {
-    let arr = [];
-    let x = 1;
-    for (let i = 1; i <= num; i++) {
-        if (x != 4) {
-            arr[i - 1] = i;
-        } else if (x == 4) {
-            arr[i - 1] = i * 10;
-            x = 0;
-        }
-        x++;
-    }
-    return arr;
+    let numbersArr = Array.from({length: num}, (v, k) => k+1);
+
+    return numbersArr.map( numbersArr => numbersArr%4==0 ? numbersArr*10 : numbersArr);
 }
 
 testSimilar(amplify(1), [1]);

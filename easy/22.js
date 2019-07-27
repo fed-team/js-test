@@ -1,7 +1,7 @@
 function charCount(char, str) {
     let charNumber = 0;
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] == char) charNumber++;
+    for (let letter of str){
+        letter==char?charNumber++:charNumber;
     }
     return charNumber;
 }

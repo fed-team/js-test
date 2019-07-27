@@ -1,11 +1,6 @@
 function isOmnipresent(arr, val) {
-    let check = 0;
-    for (let i = 0; i < arr.length; i++) {
-        for (let x = 0; x < arr[i].length; x++) {
-            if (arr[i][x] == val) check++;
-        }
-    }
-    return check >= arr.length;
+    const newArr = [].concat(...arr);
+    return newArr.filter(element => element == val).length >= arr.length;
 }
 
 test(isOmnipresent([

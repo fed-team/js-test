@@ -1,7 +1,5 @@
 function largestSwap(num) {
-    num = num.toString();
-    let numArray = [num[1], num[0]];
-    return numArray < num;
+    return num.toString().split("").reverse() <= num.toString().split("");
 }
 
 test(largestSwap(27), false)

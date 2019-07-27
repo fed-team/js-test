@@ -1,17 +1,7 @@
 function charIndex(word, char) {
-    let numberOfChars = 0;
-    for (let i = 0; i < word.length; i++) {
-        if (word[i] == char) numberOfChars++;
-    }
-    let firstIndex = word.indexOf(char, 0);
-    let secondIndex=word.indexOf(char, firstIndex+1);
-    if(numberOfChars==3){
-        secondIndex=word.indexOf(char, secondIndex+1);
-    }
-    if (secondIndex == -1) secondIndex = firstIndex;
-    let indexArray = [firstIndex, secondIndex];
-    if (firstIndex == -1) indexArray = undefined;
-    return indexArray;
+    if (word.indexOf(char) > -1 && word.lastIndexOf(char) > -1) {
+        return [word.indexOf(char), word.lastIndexOf(char)];
+    } else return undefined;
 }
 
 testSimilar(charIndex('hello', 'l'), [2, 3])

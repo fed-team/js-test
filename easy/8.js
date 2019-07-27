@@ -1,11 +1,5 @@
 function societyName(friends) {
-    let firstLetters=[];
-    for(let i=0;i<friends.length;i++)
-    {
-        firstLetters[i]=friends[i][0];
-    }
-    firstLetters.sort();
-    return firstLetters.join("");
+    return friends.map( friends => friends[0]).sort().join("");
 }
 
 test(societyName(['Adam', 'Sarah', 'Malcolm']), 'AMS')

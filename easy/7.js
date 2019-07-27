@@ -1,13 +1,10 @@
 function missingAngle(angle1, angle2) {
-    let angle3=180-(angle1+angle2);
-    if(angle1>90||angle2>90||angle3>90)
-    {
+    let angle3 = 180 - (angle1 + angle2);
+    if (angle1 > 90 || angle2 > 90 || angle3 > 90) {
         return "obtuse";
-    }
-    else if(angle1==90||angle2==90||angle3==90){
+    } else if (angle1 == 90 || angle2 == 90 || angle3 == 90) {
         return "right";
-    }
-    else{
+    } else {
         return "acute";
     }
 }

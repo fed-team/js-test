@@ -1,14 +1,5 @@
 function transformUpvotes(str) {
-    let strArray = [];
-    strArray = str.split(" ");
-    for (let i = 0; i < strArray.length; i++) {
-        if (strArray[i].includes("k")) {
-            strArray[i] = strArray[i].replace("k", '');
-            strArray[i] *= 1000;
-        }
-        strArray[i] = parseInt(strArray[i]);
-    }
-    return strArray;
+    return str.split(" ").map(number => number.includes("k") ? parseInt(number.replace("k", '') * 1000) : parseInt(number));
 }
 
 testSimilar(transformUpvotes('20.3k 3.8k 7.7k 992'), [20300, 3800, 7700, 992])

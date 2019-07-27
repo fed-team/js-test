@@ -1,14 +1,7 @@
 function hashPlusCount(str) {
-    let hashPlusArray=[0,0];
-    for(let i=0;i<str.length;i++){
-        if(str[i]=="#"){
-            hashPlusArray[0]++;
-        }
-        else if(str[i]=="+"){
-            hashPlusArray[1]++;
-        }
-    }
-    return hashPlusArray;
+    let hashPlus = [str.split("").filter(char => char == "#").length, str.split("").filter(char => char == "+").length];
+    return hashPlus;
+
 }
 
 testSimilar(hashPlusCount("####"), [4, 0])

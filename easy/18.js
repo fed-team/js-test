@@ -1,4 +1,6 @@
 function reverseCase(str) {
+    return str.split("").map(char => char !== char.toUpperCase() ? char.toUpperCase() : char.toLowerCase()).join("");
+    /*
     let convertedStr=[];
     for (let i = 0; i < str.length; i++) {
         if (str[i] !== str[i].toLowerCase()) {
@@ -8,6 +10,7 @@ function reverseCase(str) {
         }
     }
     return convertedStr.join("");
+    */
 }
 
 test(reverseCase('Happy Birthday'), 'hAPPY bIRTHDAY')

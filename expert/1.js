@@ -1,7 +1,21 @@
 const words = ['a', 'after', 'all', 'an', 'and', 'are', 'as', 'by', 'continued', 'deadlines', 'doubly', 'fish', 'for', 'go', 'happen', 'happened', 'i', 'illusion', 'is', 'long', 'love', 'lunchtime', 'make', 'moment', 'noise', 'nothing', 'of', 'or', 'people', 'problem', 'second', 'so', 'summarize', 'summary', 'thanks', 'the', 'then', 'they', 'time', 'to', 'whooshing']
 
 const cleave = str => {
-    
+    let possibleWords = [], fixedStr = ``, prototypeOfWord = ``;
+    for (let i = 0; i < str.length; i++) {
+        prototypeOfWord += str[i];
+        if (words.includes(prototypeOfWord)) {
+            possibleWords.push(prototypeOfWord);
+            for (let x = i + 1; x < i + 10; x++) {
+                prototypeOfWord += str[x];
+                if (words.includes(prototypeOfWord)) possibleWords.push(prototypeOfWord);
+            }
+            fixedStr += `${possibleWords[possibleWords.length-1]}`;
+            prototypeOfWord = "";
+            possibleWords = [];
+        }
+    }
+    return fixedStr.trim();
 }
 
 test(cleave('solongandthanksforallthefish'), 'so long and thanks for all the fish')

@@ -6,7 +6,7 @@ const removeVowels = str => {
                 str = str.slice(0,i)+str.slice(i+1, str.length);
             }
         }
-    }
+    }  
     return str;
 }
 

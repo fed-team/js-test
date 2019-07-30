@@ -3,7 +3,7 @@ const containsDigit = str => {
 
     for(i=0;i<arr.length; i++){
         if(!isNaN(arr[i])) return true;        
-    }
+    }  
     return false;
 }
 

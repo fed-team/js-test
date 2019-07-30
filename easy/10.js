@@ -1,6 +1,6 @@
 function largestSwap(n) {
-    let dozens = n%10;
-    let unity = Math.floor(n/10);
+    const dozens = n%10;
+    const unity = Math.floor(n/10);
     return (dozens*10+unity)<=n;
 }
 

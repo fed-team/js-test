@@ -1,6 +1,6 @@
 const findSubCategory = str => {
     // const score = str.split(`/`);
-    return str.split(`/`)[str.split(`/`).length-2];
+    return str.split(`/`)[str.split(`/`).length-2];  
     //is it readable? maybe i should do it with variable?
 }
 

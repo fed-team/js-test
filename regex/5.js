@@ -1,5 +1,12 @@
 const lettersOnly = str => {
-
+    let score = ``;
+    for(i=0;i<str.length;i++){
+        // console.log(str.charCodeAt(i));
+        if(str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90 || str.charCodeAt(i)>=97 && str.charCodeAt(i)<=122){
+            score += str[i];
+        }
+    }
+    return score;
 }
 
 test(lettersOnly(',1|2)")A^1<[_)?^"]l[a`3+%!d@8-0_0d.*}i@&n?='), 'Aladdin')

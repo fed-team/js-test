@@ -1,13 +1,10 @@
 function isOmnipresent(arr, val) {
     let count = 0;
     for (i = 0; i < arr.length; i++) {
-        for (j = 0; j < arr[i].length; j++) {
-            if (arr[i][j] == val) {
-                count++;
-            }
-        }
+        if(arr[i].some(el => {
+            return el==val;
+        })) count ++;
     }
-
     return count >= arr.length;
 }
 

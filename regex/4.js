@@ -9,7 +9,7 @@ const replaceVowels = (str, sign) => {
         }
     }
     return str.join(``);
-    //this is the same as 30th qest from ../easy/folder
+    //this is the same as 30th qest from ../easy/
 }
 
 test(replaceVowels("the aardvark", "#"), "th# ##rdv#rk")

@@ -1,12 +1,6 @@
 function charIndex(word, char) {
     word = word.split('');
-    let helper = [];
-    word.forEach((element, i) => {
-        if (element == char) {
-            helper.push(i);
-        }
-    });
-    return (helper.length > 0) ? [helper[0], helper[helper.length - 1]] : undefined;
+    return [word.indexOf(char), word.lastIndexOf(char)];
 }
 
 testSimilar(charIndex('hello', 'l'), [2, 3])

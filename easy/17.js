@@ -5,14 +5,18 @@ function firstVowel(str) {
     let score = -1;
     let count = 0;
     str.forEach(element => {
-        lookfor.forEach(ele => {
-            if (element == ele && count != 1) {
-                score = str.indexOf(element);
-                count++;
-            }
-        });
+        // lookfor.forEach(ele => {
+        //     if (element == ele && count != 1) {
+        //         score = str.indexOf(element);
+        //         count++;
+        //     }
+        // });
+
+        lookfor.findIndex(element);
+
     });
     return score;
+
 }
 
 test(firstVowel("hello"), 1)

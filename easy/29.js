@@ -5,7 +5,6 @@ function transformUpvotes(str) {
       return (e = parseFloat(e) * 1000);
     } else return parseFloat(e);
   });
-  console.log(str);
   return str;
 }
 

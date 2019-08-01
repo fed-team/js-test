@@ -7,7 +7,6 @@ function amplify(num) {
     if (!(x % 4)) return (x = x * 10);
     else return x;
   }));
-  // return amplifyNum;
 }
 
 testSimilar(amplify(1), [1]);

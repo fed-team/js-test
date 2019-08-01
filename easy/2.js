@@ -1,6 +1,8 @@
 function sayHelloBye(name, num) {
-  if (num) return `Hello ${name.charAt(0).toUpperCase() + name.slice(1)}`;
-  else return `Bye ${name.charAt(0).toUpperCase() + name.slice(1)}`;
+  // if (num) return `Hello ${name.charAt(0).toUpperCase() + name.slice(1)}`;
+  // else return `Bye ${name.charAt(0).toUpperCase() + name.slice(1)}`;
+  name = name.charAt(0).toUpperCase() + name.slice(1);
+  return num == 1 ? `Hello ${name}` : `Bye ${name}`;
 }
 
 test(sayHelloBye("jose", 1), "Hello Jose");

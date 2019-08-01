@@ -1,7 +1,9 @@
 function sumOfCubes(nums) {
-  let tri = 0;
-  nums.forEach(el => (tri += el ** 3));
-  return tri;
+  let cube = 0;
+  nums.map(x => {
+    cube += x ** 3;
+  });
+  return cube;
 }
 
 test(sumOfCubes([1, 5, 9]), 855);

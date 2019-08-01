@@ -1,7 +1,7 @@
 function convertToDecimal(perc) {
-  let decimal = [];
-  perc.forEach(el => decimal.push(parseFloat(el) / 100));
-  return decimal;
+  // let decimal = [];
+  return (parc = perc.map(el => parseFloat(el) / 100));
+  // return decimal;
 }
 
 testSimilar(convertToDecimal(["33%", "98.1%", "56.44%", "100%"]), [

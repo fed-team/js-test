@@ -1,7 +1,7 @@
 function isAvgWhole(arr) {
   let sum = 0;
-  arr.forEach(num => {
-    sum += num;
+  arr.map(x => {
+    sum += x;
   });
   return Number.isInteger(sum / arr.length);
 }

@@ -1,6 +1,6 @@
 function societyName(friends) {
   let name = "";
-  friends.sort().forEach(el => (name = name + el[0]));
+  friends.sort().map(x => (name = name + x[0]));
   return name;
 }
 

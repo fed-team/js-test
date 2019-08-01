@@ -1,10 +1,11 @@
 function transformUpvotes(str) {
   str = str.split(" ");
-  for (let i = 0; i <= str.length - 1; i++) {
-    if (str[i][str[i].length - 1] == "k") {
-      str[i] = parseFloat(str[i].slice(0, str[i].length - 1)) * 1000;
-    }
-  }
+  str = str.map(e => {
+    if (e[e.length - 1] == "k") {
+      return (e = parseFloat(e) * 1000);
+    } else return parseFloat(e);
+  });
+  console.log(str);
   return str;
 }
 

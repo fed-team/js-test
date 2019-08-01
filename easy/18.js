@@ -1,10 +1,12 @@
 function reverseCase(str) {
-  let reverse = "";
-  for (let i = 0; i < str.length; i++) {
-    if (str[i].charCodeAt(0) <= 90) reverse += str[i].toLowerCase();
-    else if (str[i].charCodeAt(0) > 90) reverse += str[i].toUpperCase();
-  }
-  return reverse;
+  str = [...str].map(x => {
+    if (/[a-z]/.test(x)) {
+      return x.toUpperCase();
+    } else if (/[A-Z]/.test(x)) {
+      return x.toLowerCase();
+    } else return x;
+  });
+  return str.join("");
 }
 
 test(reverseCase("Happy Birthday"), "hAPPY bIRTHDAY");

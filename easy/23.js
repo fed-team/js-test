@@ -1,7 +1,9 @@
 function factorial(n) {
-  let strong = 1;
-  for (let i = 1; i <= n; i++) strong = strong * i;
-  return strong;
+  let num = [];
+  for (let i = 1; i < n; i++) {
+    num.push(i);
+  }
+  console.log(num);
 }
 
 test(factorial(5), 120);

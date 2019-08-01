@@ -1,9 +1,5 @@
 function isOmnipresent(arr, val) {
-  let num = 0;
-  arr.forEach(el => {
-    if (el.includes(val)) num++;
-  });
-  return num == arr.length;
+  return arr.every(element => element.includes(val));
 }
 
 test(isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 1), true);

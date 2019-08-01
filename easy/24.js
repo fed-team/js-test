@@ -1,8 +1,5 @@
 function filterArray(arr) {
-  let deleteString = _.remove(arr, function(x) {
-    return typeof x != "string";
-  });
-  return deleteString;
+  return _.remove(arr, x => typeof x != "string");
 }
 
 testSimilar(filterArray([1, 2, "a", "b"]), [1, 2]);

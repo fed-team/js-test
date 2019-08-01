@@ -1,13 +1,13 @@
 function amplify(num) {
   let amplifyNum = [];
-  let pushNum;
   for (let i = 1; i <= num; i++) {
-    if (!(i % 4)) {
-      pushNum = i * 10;
-    } else pushNum = i;
-    amplifyNum.push(pushNum);
+    amplifyNum.push(i);
   }
-  return amplifyNum;
+  return (amplifyNum = amplifyNum.map(x => {
+    if (!(x % 4)) return (x = x * 10);
+    else return x;
+  }));
+  // return amplifyNum;
 }
 
 testSimilar(amplify(1), [1]);

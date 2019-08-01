@@ -1,5 +1,5 @@
 function matchHouses(step) {
-  if (step < 1) return step * 6;
+  if (step < 1) return 0;
   else return step * 5 + 1;
 }
 

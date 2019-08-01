@@ -1,5 +1,5 @@
 function firstVowel(str) {
-  return str.indexOf(str.match(/[aeiou]/gi)[0]);
+  return str.match(/[aeiou]/i).index;
 }
 
 test(firstVowel("hello"), 1);

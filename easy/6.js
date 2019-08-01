@@ -1,12 +1,9 @@
 function amplify(num) {
-  let amplifyNum = [];
-  for (let i = 1; i <= num; i++) {
-    amplifyNum.push(i);
-  }
-  return (amplifyNum = amplifyNum.map(x => {
+  if (num == 1) return [1];
+  return _.range(1, num + 1).map(x => {
     if (!(x % 4)) return (x = x * 10);
     else return x;
-  }));
+  });
 }
 
 testSimilar(amplify(1), [1]);

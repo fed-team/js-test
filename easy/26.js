@@ -1,11 +1,6 @@
 function isSymmetrical(num) {
-  let table = [...num.toString()];
-  let firstNumbers = table.slice(0, Math.floor(num.toString().length / 2));
-  let lastNumbers = table.slice(
-    table.length - firstNumbers.length,
-    table.length
-  );
-  return JSON.stringify(firstNumbers) === JSON.stringify(lastNumbers.reverse());
+  let arr = Array.from(String(num), Number);
+  return _.isEqual(arr, [...arr].reverse());
 }
 
 test(isSymmetrical(23), false);

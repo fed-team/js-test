@@ -1,11 +1,9 @@
 function factorial(n) {
-  let num = [];
-  for (let i = 1; i < n; i++) {
-    num.push(i);
-  }
-  console.log(num);
+  if (n == 0) return 1;
+  return _.range(1, n + 1).reduce((x, y) => {
+    return x * y;
+  });
 }
-
 test(factorial(5), 120);
 test(factorial(3), 6);
 test(factorial(1), 1);

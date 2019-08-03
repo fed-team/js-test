@@ -1,5 +1,16 @@
 const replaceVowels = (str, sign) => {
+    let newText = '';
 
+    for (let i = 0; i < str.length; i++) {
+        const currentChar = str.charAt(i)
+        if (/[a,o,u,e,i,y]/i.test(currentChar)) {
+            newText += sign;
+        } else {
+            newText += currentChar;
+        }
+    }
+
+    return newText;
 }
 
 test(replaceVowels("the aardvark", "#"), "th# ##rdv#rk")

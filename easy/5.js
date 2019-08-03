@@ -1,5 +1,5 @@
 function removeNull(arr) {
-    
+    return arr.filter(element => element !== null)
 }
 
 testSimilar(removeNull(['a', null, 'b', null]), ['a', 'b'])

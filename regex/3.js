@@ -1,5 +1,6 @@
 const findSubCategory = str => {
-    
+    const cutString = str.replace('https://www.reddit.com/r/', '')
+    return cutString.slice(0, cutString.length - 1);
 }
 
 test(findSubCategory("https://www.reddit.com/r/relationships/"), "relationships")

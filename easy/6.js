@@ -1,5 +1,9 @@
 function amplify(num) {
-	
+    const numbers = []
+    for (let i = 1; i <= num; i++) {
+        i % 4 === 0 ? numbers.push(i * 10) : numbers.push(i)
+    }
+    return numbers
 }
 
 testSimilar(amplify(1), [1]);

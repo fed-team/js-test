@@ -1,5 +1,7 @@
 function sumOfCubes(nums) {
-	
+    const powers = [];
+    nums.forEach(el => powers.push(el ** 3));
+    return powers.reduce((el, acc) => acc += el, 0);
 }
 
 test(sumOfCubes([1, 5, 9]), 855)

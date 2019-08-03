@@ -1,5 +1,7 @@
 function isOmnipresent(arr, val) {
-	
+    let flag = true
+    arr.forEach(element => !element.includes(val) ? flag = false : null)
+    return flag
 }
 
 test(isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 1), true)

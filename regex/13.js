@@ -1,5 +1,5 @@
 const validatePIN = str => {
-
+    return /^[0-9]{4}$/.test(str);
 }
 
 test(validatePIN("1234"), true);

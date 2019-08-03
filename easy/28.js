@@ -1,5 +1,4 @@
 function isAvgWhole(arr) {
-	
 }
 
 test(isAvgWhole([3, 5, 9]), false);

@@ -1,5 +1,5 @@
 const removeSpecialCharacters = str => {
-
+    return str.replace(/[^a-zA-Z0-9]/g, '');
 }
 
 test(removeSpecialCharacters("The quick brown fox!"), "The quick brown fox")

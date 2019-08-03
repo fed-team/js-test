@@ -1,5 +1,21 @@
 function isSymmetrical(num) {
-	
+    num += '';
+	if (num.length === 1) {
+        return true;
+    } else {
+        const half = Math.floor(num.length / 2);
+        let reversed = '';
+        if (num.length % 2 === 0) {
+            for (let i = half - 1; i >= 0; i--) {
+                reversed += num.slice(half).charAt(i);
+            }
+        } else {
+            for (let i = half - 1; i >= 0; i--) {
+                reversed += num.slice(half + 1).charAt(i);
+            }
+        }
+        return num.slice(0, half) === reversed;
+    }
 }
 
 test(isSymmetrical(23), false)

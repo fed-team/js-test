@@ -1,5 +1,5 @@
 function myPi(n) {
-	
+	return Math.PI.toFixed(n);
 }
 
 test(myPi(0), 3)

@@ -1,5 +1,14 @@
 const countAll = str => {
+  let letters = str.match(/[a-z]/gi);
+  if (letters === null) { letters = [] }
 
+  let digits = str.match(/[0-9]/g);
+  if (digits === null) { digits = [] }
+
+  return {
+      letters: letters.length,
+      digits: digits.length
+  }
 }
 
 testSimilarObject(countAll('Hello'), {'LETTERS': 5, 'DIGITS': 0});

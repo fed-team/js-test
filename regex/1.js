@@ -1,5 +1,14 @@
 const removeVowels = str => {
-    
+    let newText = '';
+
+    for(let i = 0; i < str.length; i++) {
+        const currentChar = str.charAt(i);
+        if (/[a,e,u,o,i,y]/i.test(currentChar) === false) {
+            newText += currentChar;
+        }
+    }
+
+    return newText;
 }
 
 test(removeVowels('ben'), 'bn')

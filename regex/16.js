@@ -1,5 +1,11 @@
 const splitCode = str => {
+    const indexOfNumbers = str.search(/[0-9]/);
+    const arr = [
+        str.slice(0, indexOfNumbers),
+        str.slice(indexOfNumbers)
+    ];
 
+    return arr;
 }
 
 testSimilar(splitCode("TEWA8392"), ["TEWA", 8392])

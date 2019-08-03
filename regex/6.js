@@ -1,5 +1,5 @@
 const isEven = str => {
-
+    return str % 2 === 0;
 }
 
 test(isEven("2341"), false)

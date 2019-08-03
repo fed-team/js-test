@@ -1,5 +1,6 @@
 const formatNumber = num => {
-
+    num += '';
+    return num.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 }
 
 test(formatNumber(1000), "1,000");

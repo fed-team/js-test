@@ -1,5 +1,7 @@
 function societyName(friends) {
-	
+    const letters = []
+    friends.forEach(element => letters.push(element.charAt(0)))
+	return letters.sort().join('')
 }
 
 test(societyName(['Adam', 'Sarah', 'Malcolm']), 'AMS')

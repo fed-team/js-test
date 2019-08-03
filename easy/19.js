@@ -1,5 +1,5 @@
 function timeForMilkAndCookies(date) {
-	
+	return (date.getDate() === 24 && date.getMonth() === 11);
 }
 
 test(timeForMilkAndCookies(new Date(2013, 11, 24)), true)

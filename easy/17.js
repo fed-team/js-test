@@ -1,5 +1,5 @@
 function firstVowel(str) {
-	
+	return str.search(/[aeiouy]/i)
 }
 
 test(firstVowel("hello"), 1)

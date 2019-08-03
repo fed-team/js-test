@@ -1,5 +1,18 @@
 function chatroomStatus(users) {
-	
+	switch(users.length) {
+        case 0: {
+            return 'no one online';
+        } break;
+        case 1: {
+            return `${users[0]} online`;
+        } break;
+        case 2: {
+            return `${users[0]} and ${users[1]} online`;
+        } break;
+        default: {
+            return `${users[0]}, ${users[1]} and ${users.length - 2} more online`;
+        }
+    }
 }
 
 testSimilar(chatroomStatus([]), "no one online")

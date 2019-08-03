@@ -1,5 +1,5 @@
 function set(arr) {
-	
+	return [...(new Set(arr))]
 }
 
 testSimilar(set([1, 3, 3, 5, 5]), [1, 3, 5])

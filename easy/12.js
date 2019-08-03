@@ -1,5 +1,11 @@
 function convertToDecimal(perc) {
-	
+    const arr = []
+    perc.forEach(element => {
+        const item = element.split(/%/)
+        item.filter(element => (element !== '.' || element !== '%'))
+        arr.push(item.join('') / 100);
+    })
+    return arr
 }
 
 testSimilar(convertToDecimal(["33%", "98.1%", "56.44%", "100%"]), [0.33, 0.981, 0.5644, 1])

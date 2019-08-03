@@ -1,5 +1,6 @@
 const countAdverbs = str => {
-
+    const arr = str.match(/ly(\s|\.)/g);
+    return arr === null ? 0 : arr.length;
 }
 
 test(countAdverbs("She ran hurriedly towards the stadium."), 1)

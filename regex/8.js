@@ -1,5 +1,11 @@
 const howManyVowels = str => {
+    let counter = 0;
 
+    for(let i = 0; i < str.length; i++) {
+        if (/[a,e,u,o,i,y]/i.test(str.charAt(i))) { counter++ }
+    }
+
+    return counter;
 }
 
 test(howManyVowels("Celebration"), 5)

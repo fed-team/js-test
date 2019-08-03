@@ -1,5 +1,5 @@
 const isValidHexCode = str => {
-    
+    return /^#([0-9]|[a-f]){6}$/i.test(str);
 }
 
 test(isValidHexCode('#CD5C5C'), true)

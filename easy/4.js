@@ -1,5 +1,5 @@
 function matchHouses(step) {
-	
+	return step !== 0 ? 6 + (step - 1) * 5 : 0
 }
 
 test(matchHouses(1), 6)

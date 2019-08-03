@@ -1,5 +1,12 @@
 const doubleLetters = str => {
+    let previousChar = null;
 
+    for(let i = 0; i < str.length; i++) {
+        if (previousChar === str.charAt(i)) { return true }
+        previousChar = str.charAt(i);
+    }
+
+    return false;
 }
 
 test(doubleLetters("loop"), true)

@@ -1,7 +1,7 @@
 function amplify(num) {
   if (num == 1) return [1];
   return _.range(1, num + 1).map(x => {
-    if (!(x % 4)) return (x = x * 10);
+    if (!(x % 4)) return x * 10;
     else return x;
   });
 }

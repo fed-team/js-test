@@ -1,5 +1,5 @@
 function convertToDecimal(perc) {
-  return (parc = perc.map(el => parseFloat(el) / 100));
+  return perc.map(el => parseFloat(el) / 100);
 }
 
 testSimilar(convertToDecimal(["33%", "98.1%", "56.44%", "100%"]), [

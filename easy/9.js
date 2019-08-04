@@ -1,9 +1,9 @@
 function hashPlusCount(str) {
   let hash = (plus = 0);
-  for (let i = 0; i < str.length; i++) {
-    if (/[#]/.test(str[i])) hash++;
-    else if (/[+]/.test(str[i])) plus++;
-  }
+  [...str].forEach(e => {
+    if (/[#]/.test(e)) hash++;
+    else if (/[+]/.test(e)) plus++;
+  });
   return [hash, plus];
 }
 

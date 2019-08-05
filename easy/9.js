@@ -1,10 +1,5 @@
 function hashPlusCount(str) {
-  let hash = (plus = 0);
-  [...str].forEach(e => {
-    if (/[#]/.test(e)) hash++;
-    else if (/[+]/.test(e)) plus++;
-  });
-  return [hash, plus];
+  return [str.replace(/[^#]/g, "").length, str.replace(/[^+]/g, "").length];
 }
 
 testSimilar(hashPlusCount("####"), [4, 0]);

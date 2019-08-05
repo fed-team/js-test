@@ -1,7 +1,8 @@
 function societyName(friends) {
-  let name = "";
-  friends.sort().map(x => (name = name + x[0]));
-  return name;
+  return friends
+    .sort()
+    .map(x => x[0])
+    .join("");
 }
 
 test(societyName(["Adam", "Sarah", "Malcolm"]), "AMS");

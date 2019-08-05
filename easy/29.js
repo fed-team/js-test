@@ -1,6 +1,5 @@
 function transformUpvotes(str) {
-  str = str.split(" ");
-  return str.map(e => {
+  return str.split(" ").map(e => {
     if (/[k]/.test(e[e.length - 1])) {
       return parseFloat(e) * 1000;
     }

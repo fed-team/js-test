@@ -1,5 +1,5 @@
 function calculateExponent(num, exp) {
-  return Math.pow(num, exp);
+  return num**exp;
 }
 
 test(3125, calculateExponent(5, 5));

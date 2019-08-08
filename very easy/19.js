@@ -1,7 +1,5 @@
 function sum(n) {
-  let a = 0;
-  for (let i = 1; i <= n; i++) a = a + i;
-  return a;
+return _.range(1, n+1).reduce((x,y) => x+y);
 }
 
 test(1, sum(1));

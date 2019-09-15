@@ -1,7 +1,7 @@
 const detectBrowser = str => {
     
 }
-
+/*
 test(detectBrowser("Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0)"), "Internet Explorer");
 test(detectBrowser("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)"), "Internet Explorer");
 test(detectBrowser("Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)"), "Internet Explorer");
@@ -60,3 +60,5 @@ test(detectBrowser("Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/
 test(detectBrowser("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/4.0.221.7 Safari/532.2"),  "Google Chrome");
 test(detectBrowser("Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.29 Safari/525.13"),  "Google Chrome");
 test(detectBrowser("Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13"),  "Google Chrome");
+
+*/

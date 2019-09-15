@@ -1,5 +1,16 @@
 const wurstIsBetter = str => {
 
+    // const arr = [Kielbasa, Chorizo, Moronga, Salami, Sausage, Andouille, Naem, Merguez, Gurka, Snorkers, Pepperoni]
+    
+    // //const reg = /  /;
+
+    // for(i=0; i>arr.length; i++){
+    //     if(str.search(arr[i]) == -1){
+    //         console.log(str.search(arr[i]));
+    //     }
+        
+    // }
+    
 }
 
 test(wurstIsBetter("Sausage fests are like salami fests"), "Wurst fests are like Wurst fests")

@@ -1,5 +1,17 @@
 const doubleLetters = str => {
 
+    for (i = 0; i < str.length; i++) {
+        if (i >= 1) {
+            if (str[i - 1] == str[i]) {
+                return true;
+            }
+            else if (i == str.length - 1) {
+                return false;
+            }
+        }
+    }
+    // i dont know how to do it with regex
+
 }
 
 test(doubleLetters("loop"), true)

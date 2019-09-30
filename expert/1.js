@@ -1,24 +1,34 @@
-const words = ['a', 'after', 'all', 'an', 'and', 'are', 'as', 'by', 'continued', 'deadlines', 'doubly', 'fish', 'for', 'go', 'happen', 'happened', 'i', 'illusion', 'is', 'long', 'love', 'lunchtime', 'make', 'moment', 'noise', 'nothing', 'of', 'or', 'people', 'problem', 'second', 'so', 'summarize', 'summary', 'thanks', 'the', 'then', 'they', 'time', 'to', 'whooshing']
+const words = ['a', 'after', 'all', 'an', 'and', 'are', 'as', 'by', 'continued', 'deadlines', 'doubly',
+    'fish', 'for', 'go', 'happen', 'happened', 'i', 'illusion', 'is', 'long', 'love', 'lunchtime', 'make',
+    'moment', 'noise', 'nothing', 'of', 'or', 'people', 'problem', 'second','so', 'summarize', 'summary',
+    'thanks', 'the', 'then', 'they', 'time', 'to', 'whooshing'];
 
 const cleave = str => {
 
-    const insertSpace = (index, str) => {
-        const firstPart = str.slice(0, index);
-        const secondPart = str.slice(index, str.length);
+    //const count = words.length;
 
-        return `${firstPart}${str}${secondPart}`;
+    String.prototype.insertSpace = function (index) {
+        const firstPart = this.slice(0, index);
+        const secondPart = this.slice(index, this.length);
+        return `${firstPart} ${secondPart}`;
     }
 
-    for (let i = 0; i < words.length; i++) {
-        const el = words[i];
-        const index = str.indexOf(el);
-        if ( index > -1) {
+    let start = 0;
 
-            str = insertSpace(index, str);
-            console.log(str);
+    for (let i = 0; i < str.length; i++) {
+
+        let stop = i;
+
+        for (let j = 0; j < words.length; j++) {
+
+            if (str.slice(start, stop) == words[j]) {
+                str = str.insertSpace(i);
+                start = i + 1;
+            }
         }
     }
 
+    console.log(str);
 }
 
 test(cleave('solongandthanksforallthefish'), 'so long and thanks for all the fish')

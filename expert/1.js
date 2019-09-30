@@ -13,17 +13,24 @@ const cleave = str => {
         return `${firstPart} ${secondPart}`;
     }
 
-    let start = 0;
+    let stop = str.length;
 
-    for (let i = 0; i < str.length; i++) {
+    for (let i = str.length-1; i >= 0; i--) {
 
-        let stop = i;
+        let start = i;
 
-        for (let j = 0; j < words.length; j++) {
+        for (let j = words.length-1; j >= 0; j--) {
+            let sliceText = str.slice(start, stop);
+            if (sliceText == words[j]) {
 
-            if (str.slice(start, stop) == words[j]) {
+
+                
+
+
                 str = str.insertSpace(i);
-                start = i + 1;
+                stop = start;
+                start = i - 1;
+                break;
             }
         }
     }

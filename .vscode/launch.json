@@ -15,8 +15,14 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:5500",
+            "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         }
     ]
 }
+
+/* 
+
+google-chrome --remote-debugging-port=9222
+
+*/

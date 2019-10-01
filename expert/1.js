@@ -1,40 +1,50 @@
 const words = ['a', 'after', 'all', 'an', 'and', 'are', 'as', 'by', 'continued', 'deadlines', 'doubly',
     'fish', 'for', 'go', 'happen', 'happened', 'i', 'illusion', 'is', 'long', 'love', 'lunchtime', 'make',
-    'moment', 'noise', 'nothing', 'of', 'or', 'people', 'problem', 'second','so', 'summarize', 'summary',
+    'moment', 'noise', 'nothing', 'of', 'or', 'people', 'problem', 'second', 'so', 'summarize', 'summary',
     'thanks', 'the', 'then', 'they', 'time', 'to', 'whooshing'];
 
 const cleave = str => {
 
-    //const count = words.length;
+    const arr = words;
+    arr.sort((a, b) => {
+        return b.length - a.length;
+    });
+    //console.log(arr);
 
-    String.prototype.insertSpace = function (index) {
-        const firstPart = this.slice(0, index);
-        const secondPart = this.slice(index, this.length);
-        return `${firstPart} ${secondPart}`;
+    String.prototype.insertSpace = function (indexStart, indexStop) {
+        const firstPart = this.slice(0, indexStart);
+        const secondPart = this.slice(indexStart, indexStop);
+        const thirdPart = this.slice(indexStop, this.length);
+        return `${firstPart} ${secondPart} ${thirdPart}`;
     }
 
-    let stop = str.length;
+    for (let i = 0; i < arr.length; i++) {
+        let el = arr[i];
 
-    for (let i = str.length-1; i >= 0; i--) {
+        let start = 0;
+        let stop = el.length;
 
-        let start = i;
+        // console.log(`weszlo w petle i | i: ${i} | start ${start} | stop ${stop} | el: ${el}` );
 
-        for (let j = words.length-1; j >= 0; j--) {
-            let sliceText = str.slice(start, stop);
-            if (sliceText == words[j]) {
+        for (let j = 0; j < str.length - el.length +1; j++) {
+            let piece = str.slice(start, stop)
 
+            //console.log(`${piece} | ${arr[i]} | ${j} | ${i}`);
 
-                
+            if( piece == arr[i] && stop <= str.length) {
 
-
-                str = str.insertSpace(i);
-                stop = start;
-                start = i - 1;
-                break;
+                str = str.insertSpace(i-el.length, i);
+                // console.log(`Find it!  ${str} | ${piece}`);
+                // console.log(`i:${i} |j: ${j} |start: ${start} |stop: ${stop} | `);
+                start = stop;
+                stop += el.length;
+                // console.log(`po zmianach | start: ${start} | stop ${stop} | `);
             }
+            // }else if(stop <= el.length){
+            start++; stop++;
+            // }else break;
         }
     }
-
     console.log(str);
 }
 

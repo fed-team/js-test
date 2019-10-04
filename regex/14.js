@@ -1,13 +1,13 @@
 const wurstIsBetter = str => {
 
     const arr = ['Kielbasa', 'Chorizo', 'Moronga', 'Salami', 'Sausage', 'Andouille', 'Naem', 'Merguez', 'Gurka', 'Snorkers', 'Pepperoni'];
-    str = str.split(" ");
     
-    const reg = /  /gm;
-    arr.forEach(el => {
-        console.log(el);
-    });
-        
+    for (let i = 0; i < arr.length; i++) {
+        let reg = new RegExp(arr[i], "gmi");
+        str = str.replace(reg, "Wurst");
+    }
+    
+    return str;
 }
 
 test(wurstIsBetter("Sausage fests are like salami fests"), "Wurst fests are like Wurst fests")

@@ -1,4 +1,11 @@
 const grabCity = str => {
+    const reg = /\[[a-zA-Z ]+\]/gmi;
+
+    str = str.match(reg);
+
+    str = str.toString();
+
+    console.log(`${typeof str} | ${str}`);
 
 }
 

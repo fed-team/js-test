@@ -1,5 +1,8 @@
 const isZipCodeValid = str => {
-    return str.charAt(2)==`-`;
+    
+    const reg =/[0-9]{2}-[0-9]{3}/gm
+
+    return reg.test(str);
 }
 
 test(isZipCodeValid("81442"), false); 

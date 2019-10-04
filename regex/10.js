@@ -2,13 +2,15 @@ const formatNumber = num => {
     let numString = num.toString();
     
 
-    for(i=numString.length-3;i>=0;i=i-3){
+    for(i=numString.length-3;i>=0;i-=3){
 
         const firstPart = numString.slice(0, i);
         const secondPart = numString.slice(i, numString.length);
         numString = `${firstPart},${secondPart}`;
     }
     return numString;
+
+    //i dont have any idea how to use regex here
 }
 
 

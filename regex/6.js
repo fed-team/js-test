@@ -1,9 +1,9 @@
 const isEven = str => {
-    return str % 2 == 0;
-    //can i should use parseInt method?
+    const reg = /2$|4$|6$|8$|0$/gm;
+    return reg.test(str);
 }
 
-test(isEven("2341"), false)
-test(isEven("132"), true)
-test(isEven("29"), false)
-test(isEven("5578"), true)
+test(isEven("2341"), false);
+test(isEven("132"), true);
+test(isEven("29"), false);
+test(isEven("5578"), true);

@@ -1,7 +1,9 @@
 const findSubCategory = str => {
-    // const score = str.split(`/`);
-    return str.split(`/`)[str.split(`/`).length-2];  
-    //is it readable? maybe i should do it with variable?
+
+    const reg = /https:\/\/www.reddit.com\/r\//gm;
+
+    return str.replace(reg,'').replace('/','');
+
 }
 
 test(findSubCategory("https://www.reddit.com/r/relationships/"), "relationships")

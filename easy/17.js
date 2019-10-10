@@ -1,22 +1,5 @@
 function firstVowel(str) {
-    str = str.toLowerCase();
-    str = str.split([`` [1]]);
-    let lookfor = [`a`, `e`, `i`, `o`, `u`, `y`];
-    let score = -1;
-    let count = 0;
-    str.forEach(element => {
-        // lookfor.forEach(ele => {
-        //     if (element == ele && count != 1) {
-        //         score = str.indexOf(element);
-        //         count++;
-        //     }
-        // });
-
-        lookfor.findIndex(element);
-
-    });
-    return score;
-
+    return str.search(/[aeiyuo]/im);
 }
 
 test(firstVowel("hello"), 1)

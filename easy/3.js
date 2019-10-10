@@ -9,7 +9,6 @@ function minMax(arr) {
 
     return [loser, winner];
 
-    //i dont know why it display error in console. 
 }
 
 testSimilar(minMax([14, 35, 6, 1, 34, 54]), [1, 54])

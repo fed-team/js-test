@@ -1,5 +1,5 @@
 function isZipCode(zipcode){    
-    return zipcode.charAt(2)==`-`;
+    return /[\d]{2}-[\d]{3}/gm.test(zipcode);
 } 
 
 test(isZipCode("81-442"), true); 
@@ -10,3 +10,4 @@ test(isZipCode("9a3-45"), false);
 test(isZipCode("%2345"), false); 
 test(isZipCode("933345"), false);
 test(isZipCode("2345"), false);
+test(isZipCode("---"), false);

@@ -1,6 +1,6 @@
 function filterArray(arr) {
     let score =[];
-    arr.forEach(el => {
+    arr.map(el => {
         if(typeof el != 'string') score.push(el);
     });
     return score;

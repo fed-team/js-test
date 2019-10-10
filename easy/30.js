@@ -1,14 +1,6 @@
 function vreplace(vowel, char) {
-    let lookfor = [`a`, `e`, `i`, `o`, `u`, `y`];
-    vowel= vowel.split('');
-    for(i=0; i<vowel.length; i++){
-        for(j=0; j<lookfor.length; j++){
-            if(vowel[i]==lookfor[j]){
-                vowel[i]=char;
-            }
-        }
-    }
-    return vowel.join(``);
+    return vowel.replace(/[aeiyuo]/gm, char);
+
 }
 
 test(vreplace("apples and bananas", "u"), "upplus und bununus")

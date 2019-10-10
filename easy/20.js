@@ -1,8 +1,6 @@
 function sumOfCubes(nums) {
     let score=0;
-    nums.forEach(element => {
-        score=score+element**3;
-    });
+    nums.map(element =>  score=score+element**3);
     return score;
 }
 

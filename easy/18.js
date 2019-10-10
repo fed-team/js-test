@@ -1,21 +1,18 @@
 function reverseCase(str) {
-    let newStr = ``
-    for (i = 0; i < str.length; i++) {
-        if (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) {
-            newStr += str.charAt(i).toLowerCase();
+    let newStr = ``;
+    str.split('').map(el => {
+        if (el.charCodeAt(0) >= 65 && el.charCodeAt(0) <= 90) {
+            newStr += el.charAt(0).toLowerCase();
         }
-        else if (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122) {
-            newStr += str.charAt(i).toUpperCase();
+        else if (el.charCodeAt(0) >= 97 && el.charCodeAt(0) <= 122) {
+            newStr += el.charAt(0).toUpperCase();
         }
         else {
-            newStr += str[i];
+            newStr += el;
         }
-    }
+    });
     return newStr;
 }
-
-//yes, i know, last else is not required, but like this imo is more readable
-
 test(reverseCase('Happy Birthday'), 'hAPPY bIRTHDAY')
 test(reverseCase('MANY THANKS'), 'many thanks')
 test(reverseCase('sPoNtAnEoUs'), 'SpOnTaNeOuS')

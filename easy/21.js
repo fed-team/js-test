@@ -1,28 +1,18 @@
 function chatroomStatus(users) {
-    // if(users.length==0){return `no one online`;}
-    // else if(users.length==1){return `${users[0]} online`}
-    // else if(users.length==2){return `${users[0]} and ${users[1]} online`}
-    // else if(users.length>=3){
-    //     let num = users.length-2;
-    //     return `${users[0]}, ${users[1]} and ${num} more online`
-    // }
-
-    switch(users.length){
+    switch (users.length) {
         case 0:
             return `no one online`;
-        break;
+            break;
         case 1:
-                return `${users[0]} online`;
-        break;
-        case 2: 
+            return `${users[0]} online`;
+            break;
+        case 2:
             return `${users[0]} and ${users[1]} online`;
-        break;
+            break;
         default:
-                let num = users.length-2;
-                return `${users[0]}, ${users[1]} and ${num} more online`
+            const num = users.length - 2;
+            return `${users[0]}, ${users[1]} and ${num} more online`
     }
-
-//first i do it on normal if, then i think it should be do on switch. is it correct thinking?
 }
 
 testSimilar(chatroomStatus([]), "no one online")

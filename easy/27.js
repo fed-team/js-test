@@ -1,5 +1,5 @@
 function myPi(n) {
-    let factor = 10**n;
+    const factor = 10**n;
     return Math.round(Math.PI*factor)/factor;
 }
 

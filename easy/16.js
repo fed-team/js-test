@@ -1,6 +1,7 @@
 function charIndex(word, char) {
     word = word.split('');
-    return [word.indexOf(char), word.lastIndexOf(char)];
+    const score = [word.indexOf(char), word.lastIndexOf(char)];
+    return ((score[0] && score[1])<0) ? undefined : score;
 }
 
 testSimilar(charIndex('hello', 'l'), [2, 3])

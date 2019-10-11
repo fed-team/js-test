@@ -1,9 +1,5 @@
 function filterArray(arr) {
-    let score =[];
-    arr.map(el => {
-        if(typeof el != 'string') score.push(el);
-    });
-    return score;
+    return arr.filter(el => typeof el != 'string')
 }
 
 testSimilar(filterArray([1, 2, "a", "b"]), [1, 2]);

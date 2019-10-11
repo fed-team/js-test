@@ -1,5 +1,5 @@
 function charCount(char, str) {
-    return str.split('').reduce((acc, cur) => (cur == char) ? acc+1 : acc, 0);
+    return str.split('').reduce((acc, cur) => (cur === char) ? acc+1 : acc, 0);
 }
 
 test(charCount('a', 'edabit'), 1)

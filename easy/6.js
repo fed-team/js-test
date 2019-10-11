@@ -1,7 +1,5 @@
 function amplify(num) {
-    return  arr = new Array(num).fill(1, 0, num).map((el, i) => ((i+1)%4==0) ? (i+1)*10 : (i+1));
-
-    /// ha! i do it in one line! im proud of myself
+    return  arr = new Array(num).fill(1, 0, num).map((el, i) => ((i+1)%4===0) ? (i+1)*10 : (i+1));
 }
 
 testSimilar(amplify(1), [1]);

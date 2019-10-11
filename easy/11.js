@@ -1,7 +1,7 @@
 function set(arr) {
 
     const filterArr = arr.filter((value, index) => {                                                            true/ false
-        return arr.indexOf(value) == index;
+        return arr.indexOf(value) === index;
       });
       return filterArr;
 }

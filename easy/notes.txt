@@ -1,6 +1,0 @@
-22,23,24 do powrotu, nie tknięte
-
-3, 29 do poprawy
-
-11 zrobić używając obiektu set.
-13, 14 zrobić to za pomocą regExp.

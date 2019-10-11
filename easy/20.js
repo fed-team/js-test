@@ -1,7 +1,5 @@
 function sumOfCubes(nums) {
-    let score=0;
-    nums.map(element =>  score=score+element**3);
-    return score;
+    return nums.reduce((acc,cur) => acc = acc+(cur**3),0);
 }
 
 test(sumOfCubes([1, 5, 9]), 855)

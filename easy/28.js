@@ -1,6 +1,6 @@
 function isAvgWhole(arr) {
     const count = arr.reduce((acc, cur) => acc + cur) / arr.length;
-    return Math.floor(count) == count;
+    return Math.floor(count) === count;
 }
 
 test(isAvgWhole([3, 5, 9]), false);

@@ -1,14 +1,5 @@
 function minMax(arr) {
-    let winner = arr[0];
-    let loser = arr[arr.length-1];
-
-    arr.forEach(element => {
-        winner = Math.max(winner, element);
-        loser = Math.min(loser, element);
-    });
-
-    return [loser, winner];
-
+    return [Math.min(...arr), Math.max(...arr)];
 }
 
 testSimilar(minMax([14, 35, 6, 1, 34, 54]), [1, 54])

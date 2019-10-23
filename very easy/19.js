@@ -1,7 +1,13 @@
 function sum(n) {
-	
+    let x = 0;
+    let y = n;
+    for(i=n; i>=0; i--){
+        x = x + y;
+        y--;
+    }
+    return x;
 }
-
+ 
 test(1, sum(1))
 test(15, sum(5))
 test(28, sum(7))

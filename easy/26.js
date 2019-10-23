@@ -1,5 +1,7 @@
 function isSymmetrical(num) {
-	
+    const str = num.toString();
+    const rev = str.split('').reverse().join('');
+    return str===rev;
 }
 
 test(isSymmetrical(23), false)

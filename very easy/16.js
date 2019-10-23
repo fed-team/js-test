@@ -1,5 +1,5 @@
 function reverse(arr) {
-
+    return arr.reverse();
 }
 
 testSimilar([4, 3, 2, 1], reverse([1, 2, 3, 4]))

@@ -1,5 +1,5 @@
 const removeVowels = str => {
-    
+    return str.replace(/[aeiyuo]/gm, '');
 }
 
 test(removeVowels('ben'), 'bn')

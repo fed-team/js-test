@@ -1,5 +1,8 @@
 const howManyVowels = str => {
+    
+    const reg = /[aeiyuo]/gm;
 
+    return str.split(reg).length-1;
 }
 
 test(howManyVowels("Celebration"), 5)

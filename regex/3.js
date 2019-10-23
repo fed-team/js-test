@@ -1,5 +1,12 @@
 const findSubCategory = str => {
-    
+
+    // const reg = /https:\/\/www.reddit.com\/r\//gm;
+
+    // return str.replace(reg,'').replace('/','');
+
+    let arr = str.split('/');
+    return arr[arr.length-2]
+
 }
 
 test(findSubCategory("https://www.reddit.com/r/relationships/"), "relationships")

@@ -1,5 +1,7 @@
 function addition(a, b) {
-
+    let c = a + b;
+    return c;
+    //return a+b;
 }
 
 test(5, addition(2, 3))

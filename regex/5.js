@@ -1,5 +1,8 @@
 const lettersOnly = str => {
+ 
+    const reg = /[^a-zA-Z]/gm;
 
+    return str.replace(reg,"");
 }
 
 test(lettersOnly(',1|2)")A^1<[_)?^"]l[a`3+%!d@8-0_0d.*}i@&n?='), 'Aladdin')

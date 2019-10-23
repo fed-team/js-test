@@ -1,5 +1,5 @@
 function divisibleByFive(n) {
-
+    return n%5==0;
 }
 
 test(false, divisibleByFive(7))

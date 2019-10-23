@@ -1,5 +1,5 @@
 function getLastItem(arr) {
-	return arr[arr.length-1]
+	return arr[arr.length-1];
 }
 
 testSimilar('Duck', getLastItem(['Cat', 'Dog', 'Duck']))

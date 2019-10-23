@@ -1,5 +1,6 @@
 function numArgs() {
-	
+    
+    return arguments.length;
 }
 
 test(0, numArgs())

@@ -1,5 +1,6 @@
 function societyName(friends) {
-	
+
+    return friends.sort().reduce((acc, el) => acc + el.charAt(0), '');
 }
 
 test(societyName(['Adam', 'Sarah', 'Malcolm']), 'AMS')

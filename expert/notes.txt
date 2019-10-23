@@ -1,0 +1,8 @@
+1. sortuję tablilcę według długości słów DONE
+2. pobieram kolejne słowa z tablicy 
+3. sprawdzam czy pasują do początku stringa
+4. przesuwam index o jeden
+5. jak znajde obudowuje spacjami w stringu
+6. tak do końca stringa
+7. go to 2.
+8. aż się skończy tablica

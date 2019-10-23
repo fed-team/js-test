@@ -1,5 +1,6 @@
 const firstNVowels = (str, n) => {
-
+    const score = str.replace(/[^aeiyuo]/gm,'');
+    return (n>score.length) ? 'invalid' : score.slice(0,n);
 }
 
 test(firstNVowels("sharpening skills", 3), "aei")

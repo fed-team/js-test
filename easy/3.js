@@ -1,5 +1,5 @@
 function minMax(arr) {
-	
+    return [Math.min(...arr), Math.max(...arr)];
 }
 
 testSimilar(minMax([14, 35, 6, 1, 34, 54]), [1, 54])
@@ -9,3 +9,4 @@ testSimilar(minMax([13, 72, 98, 43, 24, 65, 31]), [13, 98])
 testSimilar(minMax([-54, -23, -54, -21]), [-54, -21])
 testSimilar(minMax([-0.473, -0.6834, -0.1287, 0.5632]), [-0.6834, 0.5632])
 testSimilar(minMax([0, 0, 0, 0]), [0, 0])
+

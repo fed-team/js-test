@@ -1,5 +1,5 @@
 function isEmpty(s) {
-	
+    return s.length == 0;
 }
 
 test(true, isEmpty(""))

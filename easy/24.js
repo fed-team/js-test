@@ -1,5 +1,5 @@
 function filterArray(arr) {
-	
+    return arr.filter(el => typeof el != 'string')
 }
 
 testSimilar(filterArray([1, 2, "a", "b"]), [1, 2]);

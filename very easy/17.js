@@ -1,5 +1,5 @@
 function concat(arr1, arr2) {
-	
+    return [...arr1, ...arr2];
 }
 
 testSimilar([1, 3, 5, 2, 6, 8], concat([1, 3, 5], [2, 6, 8]))

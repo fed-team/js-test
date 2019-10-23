@@ -1,4 +1,6 @@
 const replaceVowels = (str, sign) => {
+    
+    return str.replace(/[aeiyuo]/gm, sign);
 
 }
 

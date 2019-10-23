@@ -1,0 +1,1 @@
+problem ze wstawianiem, jakis blad w petlach i warunkach. podmienia name. 

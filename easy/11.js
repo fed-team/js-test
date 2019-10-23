@@ -1,5 +1,9 @@
 function set(arr) {
-	
+
+    const filterArr = arr.filter((value, index) => {                                                            true/ false
+        return arr.indexOf(value) === index;
+      });
+      return filterArr;
 }
 
 testSimilar(set([1, 3, 3, 5, 5]), [1, 3, 5])

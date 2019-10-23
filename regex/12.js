@@ -1,5 +1,9 @@
 const doubleLetters = str => {
 
+    const reg = /([a-z])\1/gm;
+
+    return reg.test(str);
+
 }
 
 test(doubleLetters("loop"), true)

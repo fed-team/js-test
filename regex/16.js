@@ -1,5 +1,5 @@
 const splitCode = str => {
-
+    return [str.replace(/\d/gmi,''), parseInt(str.replace(/\D/gmi,''))]
 }
 
 testSimilar(splitCode("TEWA8392"), ["TEWA", 8392])

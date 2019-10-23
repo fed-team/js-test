@@ -1,5 +1,7 @@
 const letterCheck = arr => {
 
+    const reg = new RegExp(`[${arr[1]}{${arr[1].length},}]`, 'gmi');
+    return reg.test(arr[0]);
 }
 
 test(letterCheck(["trances", "nectar"]), true)

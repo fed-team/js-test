@@ -3,7 +3,7 @@ const validatePIN = str => {
     const reg = /\b([0-9]{4})\b/gm;
     const reg2 = /\b([0-9]{6})\b/gm;
 
-    return (reg.test(str) || reg2.test(str)) ? true : false
+    return reg.test(str) || reg2.test(str)
 }
 
 test(validatePIN("1234"), true);

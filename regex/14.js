@@ -1,12 +1,11 @@
 const wurstIsBetter = str => {
 
     const arr = ['Kielbasa', 'Chorizo', 'Moronga', 'Salami', 'Sausage', 'Andouille', 'Naem', 'Merguez', 'Gurka', 'Snorkers', 'Pepperoni'];
-    
-    for (let i = 0; i < arr.length; i++) {
-        let reg = new RegExp(arr[i], "gmi");
+
+    arr.forEach(el => {
+        let reg = new RegExp(el, "gmi");
         str = str.replace(reg, "Wurst");
-    }
-    
+    });
     return str;
 }
 

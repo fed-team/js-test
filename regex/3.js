@@ -1,8 +1,11 @@
 const findSubCategory = str => {
 
-    const reg = /https:\/\/www.reddit.com\/r\//gm;
+    // const reg = /https:\/\/www.reddit.com\/r\//gm;
 
-    return str.replace(reg,'').replace('/','');
+    // return str.replace(reg,'').replace('/','');
+
+    let arr = str.split('/');
+    return arr[arr.length-2]
 
 }
 

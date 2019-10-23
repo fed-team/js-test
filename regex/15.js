@@ -1,12 +1,7 @@
 const grabCity = str => {
     const reg = /\[[a-zA-Z ]+\]/gmi;
-
-    str = str.match(reg);
-
-    str = str.toString();
-
-    console.log(`${typeof str} | ${str}`);
-
+    str = str.match(reg).toString();
+    return str.slice(str.lastIndexOf('[')+1,str.lastIndexOf(']'))
 }
 
 test(grabCity("[Last Day!] Beer Festival [Munich]"), "Munich")

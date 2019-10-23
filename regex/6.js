@@ -1,5 +1,5 @@
 const isEven = str => {
-    const reg = /2$|4$|6$|8$|0$/gm;
+    const reg =  /[02468]$/gm;
     return reg.test(str);
 }
 

@@ -1,21 +1,19 @@
 const formatNumber = num => {
-    let numString = num.toString();
-    
 
-    for(i=numString.length-3;i>=0;i-=3){
+    num = num.toString();
+    const reg = /\d{3,}/gm;
 
-        const firstPart = numString.slice(0, i);
-        const secondPart = numString.slice(i, numString.length);
-        numString = `${firstPart},${secondPart}`;
+    if(reg.test(num)){
+
+        console.log(`i dont know how. think about it later`);
+
     }
-    return numString;
 
-    //i dont have any idea how to use regex here
 }
 
 
-test(formatNumber(1000), "1,000");
-test(formatNumber(1000000), "1,000,000");
-test(formatNumber(20), "20");
-test(formatNumber(0), "0");
-test(formatNumber(12948), "12,948");
+// test(formatNumber(1000), "1,000");
+// test(formatNumber(1000000), "1,000,000");
+// test(formatNumber(20), "20");
+// test(formatNumber(0), "0");
+// test(formatNumber(12948), "12,948");

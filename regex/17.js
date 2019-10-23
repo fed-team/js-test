@@ -1,4 +1,5 @@
 const countAdverbs = str => {
+    return (str.match(/[^ ]ly[^a-zA-Z]/gmi) || []).length;
 
 }
 
